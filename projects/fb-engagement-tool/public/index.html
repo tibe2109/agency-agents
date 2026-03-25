@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FB Engagement Tool</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { font-family: 'Inter', sans-serif; }
+    .log-info    { color: #94a3b8; }
+    .log-success { color: #4ade80; }
+    .log-warn    { color: #fbbf24; }
+    .log-error   { color: #f87171; }
+    .step-card { transition: all .2s; }
+    .step-card:hover { transform: translateY(-1px); }
+    #log-container { max-height: 320px; overflow-y: auto; }
+    #log-container::-webkit-scrollbar { width: 4px; }
+    #log-container::-webkit-scrollbar-thumb { background: #374151; border-radius: 4px; }
+    .tab-btn.active { background: #1d4ed8; color: white; }
+    .fade-in { animation: fadeIn .3s ease; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100 min-h-screen">
+
+  <!-- Header -->
+  <header class="bg-gray-900 border-b border-gray-800 px-6 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-sm font-bold">FB</div>
+      <h1 class="text-lg font-semibold">Engagement Tool</h1>
+    </div>
+    <div id="session-badge" class="flex items-center gap-2 text-sm">
+      <div class="w-2 h-2 rounded-full bg-gray-500" id="session-dot"></div>
+      <span id="session-text">Kiểm tra session...</span>
+    </div>
+  </header>
+
+  <!-- Tabs -->
+  <div class="bg-gray-900 border-b border-gray-800 px-6">
+    <div class="flex gap-1 pt-3">
+      <button class="tab-btn active px-4 py-2 rounded-t-lg text-sm font-medium transition-all" data-tab="comment">
+        💬 Đăng bình luận
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-t-lg text-sm font-medium text-gray-400 hover:text-gray-200 transition-all" data-tab="dm">
+        📨 Nhắn tin thành viên
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-t-lg text-sm font-medium text-gray-400 hover:text-gray-200 transition-all" data-tab="scenarios">
+        📋 Kịch bản
+      </button>
+      <button class="tab-btn px-4 py-2 rounded-t-lg text-sm font-medium text-gray-400 hover:text-gray-200 transition-all" data-tab="history">
+        📊 Lịch sử
+      </button>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="max-w-5xl mx-auto p-6 space-y-6">
+
+    <!-- ── Tab: Comment ─────────────────────────────────────────────────── -->
+    <div id="tab-comment" class="tab-content space-y-5 fade-in">
+      <div class="grid grid-cols-3 gap-5">
+        <!-- Left: Config -->
+        <div class="col-span-2 space-y-4">
+          <div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
+            <h2 class="font-semibold mb-4 text-gray-200">Cấu hình</h2>
+
+            <div class="space-y-3">
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Link bài viết Facebook *</label>
+                <input id="comment-post-url" type="url" placeholder="https://www.facebook.com/groups/.../posts/..."
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500 transition-colors">
+              </div>
+
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Kịch bản (bỏ trống = AI tự tạo 1 comment)</label>
+                <select id="comment-scenario" class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+                  <option value="">-- Không dùng kịch bản --</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scenario preview -->
+          <div id="scenario-preview" class="bg-gray-900 rounded-xl p-5 border border-gray-800 hidden">
+            <h3 class="font-medium text-sm text-gray-300 mb-3">Xem trước kịch bản</h3>
+            <div id="scenario-steps-preview" class="space-y-2"></div>
+          </div>
+        </div>
+
+        <!-- Right: Run -->
+        <div class="space-y-4">
+          <div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
+            <h2 class="font-semibold mb-4 text-gray-200">Chạy</h2>
+            <button id="btn-run-comment"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors text-sm disabled:opacity-50 disabled:cursor-not-allowed">
+              ▶ Chạy kịch bản
+            </button>
+            <p class="text-xs text-gray-500 mt-3 leading-relaxed">Trình duyệt sẽ tự động thực hiện comment theo kịch bản đã chọn.</p>
+          </div>
+
+          <div id="run-status-card" class="bg-gray-900 rounded-xl p-5 border border-gray-800 hidden">
+            <div class="flex items-center gap-2 mb-2">
+              <div id="run-status-dot" class="w-2 h-2 rounded-full bg-yellow-400 animate-pulse"></div>
+              <span id="run-status-text" class="text-sm font-medium">Đang chạy...</span>
+            </div>
+            <p id="run-id-display" class="text-xs text-gray-600 font-mono"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Log output -->
+      <div class="bg-gray-900 rounded-xl border border-gray-800">
+        <div class="flex items-center justify-between px-5 py-3 border-b border-gray-800">
+          <h3 class="text-sm font-medium text-gray-300">Log thực thi</h3>
+          <button id="btn-clear-log" class="text-xs text-gray-500 hover:text-gray-300 transition-colors">Xóa</button>
+        </div>
+        <div id="log-container" class="p-5 font-mono text-xs space-y-1 bg-gray-950 rounded-b-xl min-h-32">
+          <p class="text-gray-600">Log sẽ hiển thị ở đây khi chạy...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tab: DM ───────────────────────────────────────────────────────── -->
+    <div id="tab-dm" class="tab-content space-y-5 fade-in hidden">
+      <div class="grid grid-cols-3 gap-5">
+        <div class="col-span-2 space-y-4">
+          <div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
+            <h2 class="font-semibold mb-4 text-gray-200">Cấu hình</h2>
+            <div class="space-y-3">
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Link bài viết cần tăng tương tác *</label>
+                <input id="dm-post-url" type="url" placeholder="https://www.facebook.com/groups/.../posts/..."
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+              </div>
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Link group để lấy thành viên *</label>
+                <input id="dm-group-url" type="url" placeholder="https://www.facebook.com/groups/..."
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+              </div>
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Template tin nhắn (AI sẽ cá nhân hóa)</label>
+                <textarea id="dm-template" rows="3" placeholder="Bạn ơi, mình có bài viết hay về... mời bạn ghé đọc và cho ý kiến nhé!"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500 resize-none"></textarea>
+              </div>
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Số thành viên tối đa (khuyến nghị ≤ 10/ngày)</label>
+                <input id="dm-max" type="number" value="10" min="1" max="10"
+                  class="w-32 bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="space-y-4">
+          <div class="bg-gray-900 rounded-xl p-5 border border-gray-800">
+            <h2 class="font-semibold mb-3 text-gray-200">Chạy</h2>
+            <button id="btn-run-dm"
+              class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2.5 px-4 rounded-lg transition-colors text-sm">
+              ▶ Gửi tin nhắn
+            </button>
+            <div class="mt-3 p-3 bg-yellow-900/30 border border-yellow-800/50 rounded-lg">
+              <p class="text-xs text-yellow-400 leading-relaxed">⚠️ Delay 60-120s/tin, tối đa 10 tin/ngày để an toàn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-gray-900 rounded-xl border border-gray-800">
+        <div class="px-5 py-3 border-b border-gray-800">
+          <h3 class="text-sm font-medium text-gray-300">Log thực thi</h3>
+        </div>
+        <div id="dm-log-container" class="p-5 font-mono text-xs space-y-1 bg-gray-950 rounded-b-xl min-h-32">
+          <p class="text-gray-600">Log sẽ hiển thị ở đây...</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tab: Scenarios ────────────────────────────────────────────────── -->
+    <div id="tab-scenarios" class="tab-content fade-in hidden">
+      <div class="grid grid-cols-5 gap-5">
+        <!-- List -->
+        <div class="col-span-2">
+          <div class="bg-gray-900 rounded-xl border border-gray-800">
+            <div class="flex items-center justify-between px-5 py-4 border-b border-gray-800">
+              <h2 class="font-semibold text-sm">Danh sách kịch bản</h2>
+              <button id="btn-new-scenario" class="text-xs bg-blue-600 hover:bg-blue-700 px-3 py-1.5 rounded-lg transition-colors">
+                + Tạo mới
+              </button>
+            </div>
+            <div id="scenario-list" class="p-3 space-y-2 min-h-48">
+              <p class="text-gray-600 text-sm p-2">Chưa có kịch bản nào.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Editor -->
+        <div class="col-span-3">
+          <div id="scenario-editor" class="bg-gray-900 rounded-xl border border-gray-800">
+            <div class="px-5 py-4 border-b border-gray-800 flex items-center justify-between">
+              <h2 class="font-semibold text-sm" id="editor-title">Kịch bản mới</h2>
+              <div class="flex gap-2">
+                <button id="btn-save-scenario" class="text-xs bg-green-600 hover:bg-green-700 px-3 py-1.5 rounded-lg transition-colors">
+                  Lưu
+                </button>
+                <button id="btn-delete-scenario" class="text-xs bg-red-600/80 hover:bg-red-700 px-3 py-1.5 rounded-lg transition-colors hidden">
+                  Xóa
+                </button>
+              </div>
+            </div>
+            <div class="p-5 space-y-4">
+              <input type="hidden" id="edit-scenario-id">
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Tên kịch bản *</label>
+                <input id="edit-name" type="text" placeholder="VD: Kịch bản ra mắt sản phẩm"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+              </div>
+              <div>
+                <label class="text-sm text-gray-400 mb-1 block">Mô tả</label>
+                <input id="edit-desc" type="text" placeholder="Mô tả ngắn về kịch bản này"
+                  class="w-full bg-gray-800 border border-gray-700 rounded-lg px-3 py-2 text-sm focus:outline-none focus:border-blue-500">
+              </div>
+
+              <!-- Steps -->
+              <div>
+                <div class="flex items-center justify-between mb-2">
+                  <label class="text-sm text-gray-400">Các bước comment</label>
+                  <button id="btn-add-step" class="text-xs text-blue-400 hover:text-blue-300 transition-colors">+ Thêm bước</button>
+                </div>
+                <div id="steps-container" class="space-y-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Tab: History ──────────────────────────────────────────────────── -->
+    <div id="tab-history" class="tab-content fade-in hidden">
+      <div class="bg-gray-900 rounded-xl border border-gray-800">
+        <div class="flex items-center justify-between px-5 py-4 border-b border-gray-800">
+          <h2 class="font-semibold text-sm">Lịch sử chạy</h2>
+          <button id="btn-refresh-history" class="text-xs text-gray-400 hover:text-gray-200 transition-colors">Làm mới</button>
+        </div>
+        <div id="history-list" class="divide-y divide-gray-800">
+          <p class="text-gray-600 text-sm p-5">Chưa có lịch sử.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Step template (hidden) -->
+  <template id="step-template">
+    <div class="step-card bg-gray-800 rounded-lg p-4 border border-gray-700 space-y-3">
+      <div class="flex items-center justify-between">
+        <span class="text-xs font-medium text-gray-400">Bước <span class="step-num">1</span></span>
+        <button class="btn-remove-step text-xs text-red-400 hover:text-red-300 transition-colors">Xóa</button>
+      </div>
+      <div>
+        <label class="text-xs text-gray-500 mb-1 block">Nội dung / Template</label>
+        <textarea class="step-text w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-xs focus:outline-none focus:border-blue-500 resize-none" rows="2"
+          placeholder="Nội dung comment hoặc template cho AI..."></textarea>
+      </div>
+      <div class="grid grid-cols-2 gap-3">
+        <div>
+          <label class="text-xs text-gray-500 mb-1 block">Chờ trước (giây)</label>
+          <input type="number" class="step-delay w-full bg-gray-900 border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-blue-500" value="0" min="0">
+        </div>
+        <div class="flex items-end pb-0.5">
+          <label class="flex items-center gap-2 text-xs text-gray-400 cursor-pointer">
+            <input type="checkbox" class="step-use-ai rounded accent-blue-500">
+            Dùng AI tạo nội dung
+          </label>
+        </div>
+      </div>
+      <div>
+        <label class="text-xs text-gray-500 mb-1 block">Ảnh đính kèm (optional)</label>
+        <div class="flex items-center gap-2">
+          <input type="file" class="step-image-input hidden" accept="image/*">
+          <button class="btn-choose-image text-xs bg-gray-700 hover:bg-gray-600 px-3 py-1.5 rounded transition-colors">
+            Chọn ảnh
+          </button>
+          <span class="step-image-name text-xs text-gray-500">Chưa chọn</span>
+          <input type="hidden" class="step-image-filename">
+        </div>
+      </div>
+      <div>
+        <label class="text-xs text-gray-500 mb-1 block">Mô tả bước (optional)</label>
+        <input type="text" class="step-description w-full bg-gray-900 border border-gray-700 rounded px-3 py-1.5 text-xs focus:outline-none focus:border-blue-500"
+          placeholder="VD: Comment chào hỏi đầu tiên">
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>

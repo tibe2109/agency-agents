@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"g:/My Drive/Solution/agency-agents/projects/fb-engagement-tool/src/playwright\")",
+      "Bash(mkdir -p \"g:/My Drive/Solution/agency-agents/projects/fb-engagement-tool/src/ai\")",
+      "Bash(mkdir -p \"g:/My Drive/Solution/agency-agents/projects/fb-engagement-tool/src/db\")",
+      "Bash(mkdir -p \"g:/My Drive/Solution/agency-agents/projects/fb-engagement-tool/public\")",
+      "Bash(mkdir -p \"g:/My Drive/Solution/agency-agents/projects/fb-engagement-tool/uploads\")",
+      "Bash(for f:*)",
+      "Bash(do mv:*)",
+      "Bash(done)",
+      "Bash(do echo:*)",
+      "Read(//g//**)"
+    ]
+  }
+}

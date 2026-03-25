@@ -1,0 +1,28 @@
+{
+  "comment": {
+    "enabled": true,
+    "schedule": "0 9,14,20 * * *",
+    "description": "Chạy lúc 9h, 14h, 20h mỗi ngày",
+    "config": {
+      "post_url": "https://www.facebook.com/groups/YOUR_GROUP_ID/posts/YOUR_POST_ID",
+      "scenario_id": null
+    }
+  },
+  "dm": {
+    "enabled": true,
+    "schedule": "0 9,14,20 * * *",
+    "description": "Chạy lúc 9h, 14h, 20h mỗi ngày",
+    "config": {
+      "post_url": "https://www.facebook.com/groups/YOUR_GROUP_ID/posts/YOUR_POST_ID",
+      "group_url": "https://www.facebook.com/groups/YOUR_GROUP_ID",
+      "message_template": "Bài viết này hay lắm, mời bạn vào xem và chia sẻ ý kiến nhé! 👍",
+      "max_members": 10
+    }
+  },
+  "notes": {
+    "schedule_format": "Cron format: 'minute hour day month weekday' (VD: '0 9 * * *' = 9h mỗi ngày)",
+    "scenario_id": "Để null = AI tự tạo, hoặc nhập ID kịch bản từ dashboard",
+    "post_url": "Lấy từ: Vào group → tìm bài → copy URL từ browser",
+    "group_url": "VD: https://www.facebook.com/groups/123456789"
+  }
+}

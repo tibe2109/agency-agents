@@ -161,19 +161,32 @@ projects/fpt-telecom-sash/
 │   ├── PHASE3_TOP3_BRAND_NARRATIVE.md         ✅ Phase 3 · Brand Narrative V3
 │   └── PHASE4_COMMS_STRATEGY.md              ✅ Phase 4 · Master comms strategy
 └── designs/
-    ├── PHASE2_10_MOCKUPS_VI.md               ✅
+    ├── PHASE2_10_MOCKUPS_VI.md               ✅ V1 — 10 designs gốc
     ├── IMAGE_PROMPTS_10_DESIGNS.md           ✅
-    └── individual/
-        ├── DESIGN_01_DAI_DUONG_VUON_MINH.md      ✅
-        ├── DESIGN_02_VAN_TAY_TIEN_PHONG.md       ✅ ← DESIGN ĐƯỢC CHỌN
-        ├── DESIGN_03_30_NAM_ANH_SANG.md          ✅
-        ├── DESIGN_04_SONG_KET_NOI.md             ✅
-        ├── DESIGN_05_CUNG_DUONG_TIEN_PHONG.md    ✅
-        ├── DESIGN_06_THIEN_HA_SO.md              ✅
-        ├── DESIGN_07_SEN_VANG_DI_SAN.md          ✅
-        ├── DESIGN_08_BINH_MINH_VUON_MINH.md      ✅
-        ├── DESIGN_09_DAU_AN_VA_TINH_TE.md        ✅
-        └── DESIGN_10_NGON_LUA_BAT_DIET.md        ✅
+    ├── individual/                           ✅ V1 designs (10 files)
+    │   ├── DESIGN_01_DAI_DUONG_VUON_MINH.md      ✅
+    │   ├── DESIGN_02_VAN_TAY_TIEN_PHONG.md       ✅ ← DESIGN ĐƯỢC CHỌN (V1)
+    │   ├── DESIGN_03_30_NAM_ANH_SANG.md          ✅
+    │   ├── DESIGN_04_SONG_KET_NOI.md             ✅
+    │   ├── DESIGN_05_CUNG_DUONG_TIEN_PHONG.md    ✅
+    │   ├── DESIGN_06_THIEN_HA_SO.md              ✅
+    │   ├── DESIGN_07_SEN_VANG_DI_SAN.md          ✅
+    │   ├── DESIGN_08_BINH_MINH_VUON_MINH.md      ✅
+    │   ├── DESIGN_09_DAU_AN_VA_TINH_TE.md        ✅
+    │   └── DESIGN_10_NGON_LUA_BAT_DIET.md        ✅
+    └── v2/                                   ✅ V2 designs — Luxury Với Linh Hồn
+        ├── V2_10_MOCKUPS_OVERVIEW.md             ✅ Overview + bảng điểm
+        └── individual/                           ✅ 10 designs V2 (symbols: TOP50 FTEL · FTEL30 · FOX)
+            ├── V2_DESIGN_01_CAO_VANG_BAY_LEN.md      ✅ FOX chibi bay lên
+            ├── V2_DESIGN_02_30_NGOI_SAO_CAO.md        ✅ 30 sao + FOX Star ẩn
+            ├── V2_DESIGN_03_PIXEL_TIEN_PHONG.md       ✅ 8-bit FOX evolve
+            ├── V2_DESIGN_04_CAO_LUOT_SONG.md          ✅ FOX lướt sóng AAG
+            ├── V2_DESIGN_05_DAU_CHAN_CAO.md            ✅ Dấu chân FOX foil
+            ├── V2_DESIGN_06_TEN_LUA_CAO.md            ✅ FOX phi hành gia
+            ├── V2_DESIGN_07_CAO_KE_CHUYEN.md          ✅ FOX kể chuyện scroll
+            ├── V2_DESIGN_08_MAT_TROI_CAO.md           ✅ FOX mặt trời 30 tia
+            ├── V2_DESIGN_09_CAO_VA_HOA_VAN_VIET.md    ✅ FOX trống đồng Đông Sơn
+            └── V2_DESIGN_10_GIA_DINH_TIEN_PHONG.md    ✅ 50 FOX mini constellation
 
 projects/fpt-telecom-phase4/                ← Campaign copy (Phase 4)
 └── campaign-copy-phase4.md                ✅ All ready-to-use copy
