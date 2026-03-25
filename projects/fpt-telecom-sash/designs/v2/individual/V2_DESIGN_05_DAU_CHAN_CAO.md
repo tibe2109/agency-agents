@@ -283,6 +283,167 @@ neon, synthetic material, blurry foil edges
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Modern gallery presentation portrait, full body straight-on slightly angled, 85mm
+lens f/3.2, shallow depth of field. Vietnamese man, naturally handsome, 28-35 years
+old, contemplative confident energy — genuine warm smile, eyes thoughtful and present,
+quiet dignity. Wearing a tailored charcoal or deep navy minimal shirt and fitted dark
+trousers, modern gallery-opening aesthetic — understated elegance, not fashion-showy.
+
+SASH: He wears the V-notch commemorative silk sash correctly: V-notch centered at
+neck, two panels falling down his chest. The sash shows uniform immaculate navy,
+with 30 gold foil footprints ascending from lower to upper panel in a natural walking
+trail. Each fox paw print is clearly visible: 4 toe pads + 1 heel pad (anatomically
+correct fox track). Prints start very small at bottom and progressively increase in
+size. One print (around the 10th, representing 2006 AAG) is slightly offset and larger
+than expected — "the bold step." The 30th print at near-top has a gold foil halo ring
+and tiny "30" beside it. The area above the 30th print is empty — "the future not yet
+written." Warm 2700K key light from 45 degrees makes the gold foil sparkle distinctly
+— each footprint glints individually. Rim light outlines sash edges.
+
+POSE: Standing in grounded confident stance — both feet planted firmly, one arm
+relaxed at side, opposite arm raised to chest or slightly upward in a gesture of
+reflection or quiet strength (like a hand over heart). Face tilted slightly, warm
+smile, eyes looking directly or slightly upward. Body language: "I have walked this
+path and I am present in this moment. The next step is mine to take." Centered,
+dignified, not performance-oriented.
+
+STAGE ENVIRONMENT (soft bokeh background): Modern gallery or contemporary ceremony
+space — clean minimal architecture, soft warm gallery lighting on white walls in
+background bokeh, subtle ambient gold glow. Atmosphere is sophisticated, calm,
+contemplative. Not a celebration party — more like a moment of reflection and
+presence.
+
+LIGHTING: Warm key light 2700K from camera-left 45 degrees illuminating his face and
+making each foil footprint glint sharply with gold sparkle. Soft fill opposite side.
+Backlight from gallery/ambient lights creates subtle rim glow on shoulders and edges
+of sash. Overall: luminous, sophisticated, warm but not flashy.
+
+MOOD: Vogue Vietnam editorial meets gallery opening. Contemplative confidence,
+thoughtful presence, quiet pride. The energy of someone who has walked a path with
+intention and is ready for the next step. Asian Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, stiff pose, arms crossed defensively, sad serious
+expression, no smile, dull face, sash invisible or blurry, no footprints visible,
+casual outfit, hyperactive energy, plain white studio background, harsh daylight,
+watermark, text overlay, gradient banding, neon colors, dark moody atmosphere
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Foil Footprint Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on neutral photography board at slight angle. Studio lighting with raking
+side-light at 45 degrees emphasizing foil sparkle and charmeuse surface.
+
+FABRIC DETAIL: 100% Mulberry Charmeuse Silk, 22 Momme, satin weave. Background is
+uniform immaculate deep navy (#002D6E) with zero variation — clean dark field.
+Visible on the swatch: a trail of approximately 8–12 gold foil footprints (hot-stamp
+metallic 22K gold) in varying sizes (approximately 8mm to 18mm), representing a
+portion of the full 30-footprint trail on the sash. Each fox paw print consists of
+4 small toe pads arranged around 1 larger heel pad (anatomically accurate fox track,
+not dog or cat). The foil prints start small and progressively increase in size,
+suggesting growing stride and confidence. One print among them is slightly larger and
+offset — "the bold AAG step of 2006." The largest visible print has a subtle gold
+foil halo ring around it.
+
+TEXTURE EMPHASIS: Raking light reveals charmeuse satin weave — smooth diagonal twill
+pattern visible under magnification. The satin face is characteristically lustrous,
+showing specular highlights that make the foil footprints sparkle brilliantly.
+Individual foil prints catch the side-light with sharp specular glints — each footprint
+"glows" independently against the matte charmeuse background.
+
+TACTILE DETAIL: The foil has slight dimensional relief (hot-stamp creates subtle
+embossed effect) — just barely detectable to the fingertip — adding tactile luxury.
+
+REFERENCE OBJECTS: Optional millimeter ruler at frame edge to show actual footprint
+sizes (from 8mm to 18mm range).
+
+SWATCH MOUNTING: One edge shows finished 1mm gold metallic thread border.
+
+MOOD: Minimalist luxury material study. Like Bottega Veneta or Louis Vuitton heritage
+documentation. Emphasizes restraint + maximum meaning: "footprints on an immaculate
+navy canvas = a journey." The foil's sparkle is the only visual narrative.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry footprints, fuzzy foil edges, gradient background, pattern repeat, busy
+surface, fox illustration, cartoon, realistic animal, pixelated, low resolution,
+human hand, wrinkled fabric, stains, dirt, unfinished edge, synthetic material,
+dull sheen, watermark, text overlay, flat lighting, no texture, cheap polyester,
+colored background, no foil sparkle, no shine
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot of embroidered badge and
+foil footprint area, approximately 8x8cm visible frame. Studio lighting with raking
+side-light and subtle backlight emphasizing embroidery dimension and foil detail.
+
+EMBROIDERY DETAIL (Primary Focus): The circular "TOP 50 FTEL" badge with gold ring
+border in raised goldwork embroidery, approximately 2.5cm diameter. The badge is
+executed in luxury 22-karat gold thread with 3D raised effect through padding stitches.
+Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, backstitch
+  variations
+- "TOP 50" lettering in bold goldwork, tightly stitched
+- "FTEL" wordmark below in elegant letterforms, also goldwork
+- Fine gold ring border encircling the badge — precise line work
+- Navy silk background (#002D6E) surrounding badge, showing charmeuse smooth satin
+  weave texture
+- Actual 22K gold thread metallic sheen catching directional light with brilliant
+  sparkle
+- Individual stitch angles and fiber detail visible at macro scale — hand-craft
+  precision
+- Padding beneath creating 3D raised dimension with subtle shadows between stitches
+  (raised but not aggressive — elegant restraint matching design philosophy)
+
+SECONDARY DETAIL (Equally Important): Visible at frame edge — one or two gold foil
+footprints from the footprint trail on surrounding navy silk. The foil catches the
+raking light with sharp specular glints, creating contrast with the embroidered
+badge. This shows the interplay between two "gold luxury" techniques: traditional
+hand embroidery + modern heat-transfer foil.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) emphasizes 3D embroidery architecture
++ foil sparkle — every stitch, shadow, thread angle, fiber, padding structure clearly
+visible. Back-light creates fine luminous rim around thread edges and foil edges.
+Contrast between matte navy and brilliant gold is striking.
+
+REFERENCE SCALE: Fine metric ruler at frame edge showing badge actual size (2.5cm
+diameter).
+
+MOOD: Minimalist luxury embroidery documentation — like Bottega Veneta or heritage
+luxury archive. Celebrates the contrast: simple circular badge (maximum restraint)
+executed in premium hand-embroidery (timeless craft). The interplay with foil
+footprints shows how two techniques work together. Embroidery + footprint = the
+complete story.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery, flat surface, no 3D, no metallic sheen, low
+quality thread, fake gold, synthetic appearance, uneven stitching, loose threads,
+fraying, poor lighting, flat lighting, no shadow detail, no texture, pixelated
+photography, watermark, text overlay, cheap material, wrinkled, stains, overexposed,
+undersaturated, no contrast, no foil sparkle visible
+```
+
+---
+
 *Design V2-05 of 5 · FPT Telecom 30th Anniversary V2 · "Khí Phách Tiên Phong 1997–2027"*
 *Version 2 — Fun Element: 30 Foil Footprints Growing in Confidence + Future Void*
 

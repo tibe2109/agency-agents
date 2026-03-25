@@ -336,6 +336,160 @@ aggressive wave imagery in background
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Beach ceremony pavilion portrait, full body 3/4 angle, 85mm lens f/3.2, shallow
+depth of field. Vietnamese man, naturally handsome, 28-35 years old, cool relaxed
+energy — genuine warm smile, eyes sparkling with adventure, at-ease confidence.
+Wearing a tailored sand-linen blazer over a navy or gold-accent shirt with wide
+linen trousers in cream or light sand, modern beach ceremony sophistication. Hair
+slightly tousled by coastal breeze.
+
+SASH: He wears the V-notch commemorative silk sash correctly: V-notch at neck,
+two panels falling down his chest with natural drape. The sash clearly shows the
+ocean gradient from deep navy at base to sky blue, the three-layer Hokusai waves in
+the mid-zone, the cute surfing FOX with gold Wayfarer sunglasses prominently at
+center, and the marigold gold sunrise semicircle with "30" at the top. The fox's
+tangerine body and gold sunglasses pop against the blue-navy gradient. Warm golden
+key light from 45 degrees makes the gold embroidered badges, sunrise semicircle, and
+fox sunglasses glow warmly. Rim light traces the draping sash panels.
+
+POSE: Relaxed athletic stance — weight on one leg, opposite hip cocked naturally, one
+arm resting at side and other arm raised to shoulder height with hand relaxed and open
+(like catching wind or shading eyes from the sun), face tilted slightly upward and
+toward the light with a natural open smile. Body language suggests: "I have ridden
+this wave and enjoyed every moment." Completely at ease, not forced.
+
+STAGE ENVIRONMENT (soft bokeh background): Same beach ceremony pavilion as female model
+— open-air white draping structure, ocean view in soft turquoise bokeh background,
+golden sunset light from the right, warm string lights creating golden bokeh orbs,
+warm seafoam and amber ambient light. Tropical luxury, relaxed elegance, golden hour.
+
+LIGHTING: Warm golden key light 2700K from camera-right 45 degrees (signature sunset)
+— warms his skin, makes fox tangerine body glow, radiates the gold sunrise and
+embroidery. Soft fill from camera-left. Backlight from ocean horizon creates gentle
+rim glow on hair and shoulders.
+
+MOOD: Editorial for Vietnamese lifestyle magazine — confident, coastal, celebratory.
+The energy of someone who has successfully ridden the wave and is content. Luxury
+summer ceremony energy. Asian Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, indoor studio, dark moody, stiff pose, arms
+crossed, serious expression, no smile, sad face, sash invisible, sunglasses missing,
+blurry details, gradient banding, watermark, text overlay, overly muscular, casual
+jeans, neon colors, storm or aggressive waves, heavy jewelry
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Wave Texture Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on neutral board at slight angle. Studio lighting with raking side-light at
+45 degrees emphasizing gradient and wave detail.
+
+FABRIC DETAIL: 100% Mulberry Dupioni Silk, 22 Momme, dupioni slub texture. The
+swatch displays the gradient background clearly: deep navy (#002D6E) at bottom
+transitioning smoothly through cobalt blue (#1C5BA8) to pale sky blue at top, with
+marigold gold (#FFB81C) accents in upper region. The gradient is smooth with zero
+banding. Visible within the swatch: portions of the stylized Hokusai-inspired waves
+in the mid-zone showing clean curved outlines with rounded spiral crests, flat design
+aesthetic. Foam rendered as small round bubbles. Navy blue waves with white foam
+highlights. The cute chibi FOX (tangerine #E8632A) surfing on the largest wave is
+visible in the swatch — showing the fox's relaxed confident pose and gold Wayfarer
+sunglasses.
+
+TEXTURE EMPHASIS: Raking light reveals Dupioni's natural slub texture — fine
+individual threads creating subtle undulating surface (ocean-like movement). Satin
+face shows characteristic lustrous sheen with warm highlights from the gradient's
+golden zone. The slub texture adds to the "ocean movement" aesthetic — not smooth
+charmeuse, but living textile.
+
+REFERENCE OBJECTS: Optional millimeter ruler at edge to show wave and fox scale.
+Subtle drop shadow on fabric.
+
+SWATCH MOUNTING: One edge shows the 1mm gold metallic thread border with tiny wave
+motif couching.
+
+MOOD: Warm coastal luxury material study. Like a Missoni or Vilebrequin archive
+textile. Emphasizes the journey from navy ocean depth to golden sunrise. The waves
+and fox bring the design to life.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry waves, sharp aggressive crests, realistic ocean photograph, gradient banding,
+pixelated, low resolution, human hand, wrinkled fabric, stains, dirt, unfinished
+edge, synthetic material, dull sheen, watermark, text overlay, flat lighting, no
+texture, cheap polyester, yellow background, neon colors, sad fox, missing sunglasses,
+oversaturated colors
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot of embroidered logo area,
+approximately 8x8cm visible frame. Studio lighting with directional side-light and
+subtle backlight emphasizing 3D embroidery dimension.
+
+EMBROIDERY DETAIL (Primary Focus): The "TOP 50 FTEL" surf-club-style rounded shield
+badge in raised goldwork embroidery, approximately 2.5cm × 2.2cm. The badge features
+a rounded shield shape (gently curved edges suggesting both protection and fluidity),
+navy background, executed in luxury 22-karat gold thread with 3D raised effect through
+padding. Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, backstitch
+  variations
+- "TOP 50" lettering in bold goldwork with precise stitching
+- "FTEL" wordmark below, elegant proportions
+- Stylized wave motif at base of badge in gold couching — small decorative wave
+- Shield border crisp and well-defined with fine gold thread outline
+- Navy silk background (#002D6E) showing dupioni weave texture distinctly — subtle
+  slub variation visible alongside the smooth embroidery
+- Actual 22K gold thread metallic sheen catching directional light with brilliant
+  sparkle and depth
+- Individual stitch angles and fiber detail at macro scale, showing hand-craft
+  precision and artisanal touch
+- Padding beneath creating full 3D raised architecture with shadows between stitches
+
+SECONDARY DETAIL: Visible at frame edges — partial view of the gold sunrise region
+and foam bubbles from the wave illustration on surrounding silk, the 1mm gold border
+edge stitch with tiny wave motifs, and dupioni's natural slub texture variation.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) reveals full 3D embroidery
+architecture — every stitch, thread shadow, fiber angle, underlying padding structure.
+Back-light creates fine luminous rim around thread edges. Contrast between matte navy
+and brilliant gold is striking.
+
+REFERENCE SCALE: Fine metric ruler at frame edge showing badge actual size (2.5cm ×
+2.2cm).
+
+MOOD: Luxury heritage embroidery — like Hermès or Vilebrequin brand documentation.
+Celebrates the surf-club aesthetic meets traditional hand-embroidery. Badge is the
+hero, showing the irony: prestigious award badge in casual-cool surf styling,
+embroidered in timeless goldwork.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery, flat surface, no 3D, no metallic sheen, low
+quality thread, fake gold, synthetic appearance, uneven stitching, loose threads,
+fraying edges, poor lighting, flat lighting, no shadow detail, no texture, pixelated
+photography, watermark, text overlay, cheap material, wrinkled, stains, overexposed,
+undersaturated, no contrast, blurry detail
+```
+
+---
+
 *Design V2-04 of 5 · FPT Telecom 30th Anniversary V2 · "Khí Phách Tiên Phong 1997–2027"*
 *Version 2 — Fun Element: Sunglasses-Wearing FOX Riding the AAG Wave*
 

@@ -239,6 +239,152 @@ visible, low resolution, blurry face, generic stock photo look, serious grave mo
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Space mission control room aesthetic portrait, full body slightly angled, 85mm lens
+f/3.2, shallow depth of field. Vietnamese man, naturally handsome, 30–37 years old,
+cool competent energy — genuine proud expression, eyes sharp and forward-focused like
+mission control operator, subtle confident smile of someone who has launched something
+great. Wearing modern tech-forward outfit: deep navy fitted shirt or high-tech jacket,
+dark tailored trousers — minimal, functional, mission-ready aesthetic.
+
+SASH: He wears the V-notch commemorative silk sash correctly: centered V-notch at
+neck, two panels falling down his chest. The sash shows the space-black galaxy base
+with scattered gold foil star field, sleek silver metallic rocket motif launching
+vertically, mission patch "TOP 50 FTEL" in hot gold foil, bold "30" with "1997·2027"
+in gold condensed font. Rocket nose porthole with chibi fox astronaut clearly visible —
+white spacesuit, gold visor helmet, winking, thumbs up. Warm 2700K key light from
+45 degrees makes all gold elements (stars, patch, number) blaze. Rim light outlines
+sash edges.
+
+POSE: Mission control confident stance — weight centered, both feet grounded, body
+slightly forward-leaning with focused attention like monitoring a launch. One arm
+raised at shoulder with fingers making an "upward trajectory" gesture (index and
+middle finger pointing up in open relaxed V), the other arm at side, hand positioned
+over the sash near the mission patch. Face tilted slightly upward with that proud
+"launch successful" expression. Body language: calm, capable, mission-accomplished.
+
+STAGE ENVIRONMENT (bokeh background): Space mission control room aesthetic — very dark
+environment, large glowing screens in background showing "LAUNCH COMPLETE" or countdown
+data in electric blue bokeh, dark walls with blue LED ambient lighting, sense of control
+room precision and achievement.
+
+LIGHTING: Warm key light 2700K from camera-left 45 degrees making all sash gold elements
+sparkle and glow. Soft blue LED fill from camera-right adding tech-lab tonality.
+Backlight from screens behind creating rim glow on shoulders and hair. Overall: warm
+but precise, celebratory but calm.
+
+MOOD: Confident editorial — precision and pride. The energy of someone who helped launch
+something that changed the world and is comfortable with that responsibility. Not
+flashy, but deeply confident. Asian Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian appearance, sad grave expression, stiff pose, arms crossed defensively,
+casual outfit, plain background, flat lighting, no sash, blurry details, overexposed
+screens, low resolution, neon rave aesthetic, overly muscular, feminine styling
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Space Print Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on neutral board at slight angle. Studio lighting with raking side-light at
+45 degrees emphasizing print detail and foil shimmer.
+
+FABRIC DETAIL: 100% Mulberry Charmeuse Silk, 22 Momme, satin weave. Background color
+is space black (#0A1628) — deep, uniform, space-like. The swatch displays the digital
+print clearly: approximately 40–50 small gold foil stars visible, scattered naturally
+like a constellation. At center of visible area: portion of the sleek silver metallic
+rocket illustration — one of the three rocket fins visible, showing precise geometric
+line work. Rocket body shows the mission patch detail in hot gold foil with visible
+circular border and central star emblem. The fox astronaut illustration visible at top
+of swatch — white spacesuit, gold visor helmet, showing the micro details of the
+winking expression and thumbs-up gesture clearly.
+
+TEXTURE EMPHASIS: Raking light reveals charmeuse satin weave — diagonal twill texture
+visible at magnification. Satin face shows characteristic specular highlights. Gold
+foil stars catch the side-light with sharp individual sparkles. The silver metallic
+thread on rocket body creates a different angle of shine compared to gold foil — two
+distinct metallic dimensions visible.
+
+REFERENCE OBJECTS: Optional millimeter ruler at frame edge showing actual star size and
+rocket fin width. Subtle drop shadow on fabric.
+
+SWATCH DETAIL: Shows finished edge with 1mm gold metallic thread border.
+
+MOOD: Tech-forward luxury material study. Like a space agency mission patch detail or
+luxury tech product interior. Emphasizes the hybrid aesthetics: retro space-mission
+concept executed in luxury silk technology. Print precision is the hero.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry rocket, pixelated, low resolution, flat lighting, synthetic material, dull
+sheen, watermark, text overlay, harsh shadow, neon colors, poor quality foil,
+no texture, cheap polyester, no metallic sheen, cluttered composition, dark gloomy
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot of mission patch embroidery
+area, approximately 8x8cm visible frame. Studio lighting with raking side-light and
+subtle backlight emphasizing embroidery 3D dimension and gold foil craft.
+
+EMBROIDERY DETAIL (Primary Focus): The circular "TOP 50 FTEL" mission patch in raised
+goldwork embroidery, approximately 3cm diameter, designed in NASA/JAXA mission patch
+aesthetic. Luxury 22-karat gold thread with 3D raised effect through padding stitches.
+Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, backstitch variations
+- "TOP 50" lettering in bold uppercase goldwork with precise stitching
+- "FTEL" wordmark below in elegant proportions, also goldwork
+- Five-pointed central star emblem in gold couching — crisp geometric points
+- Circular border double-line in fine gold thread — clean defined edge
+- Space black silk background (#0A1628) surrounding patch, showing charmeuse weave
+- Actual 22K gold thread metallic sheen catching directional light with brilliant
+  sparkle and depth
+- Individual stitch angles and fiber detail at macro scale — hand-craft precision
+- Padding beneath creating 3D raised mission-patch authenticity with visible shadows
+
+SECONDARY DETAIL: Visible at frame edges — partial view of scattered gold foil stars
+on surrounding silk, and the silver metallic thread detail from rocket body illustration,
+showing the contrast between hot gold foil, satin-stitched gold thread, and silver
+metallic thread — three different metallic finishes working together.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) emphasizes full 3D mission patch
+architecture — every stitch, shadow between threads, fiber angle, underlying padding
+structure. Back-light creates fine luminous rim around thread edges. Contrast between
+matte space-black silk and brilliant gold is striking and space-worthy.
+
+REFERENCE SCALE: Fine metric ruler at frame edge showing badge actual size (3cm
+diameter).
+
+MOOD: Mission-ready luxury embroidery — like authentic NASA mission patch documentation
+or space agency official insignia. Celebrates the irony: cutting-edge space concept (fox
+astronaut in rocket) executed in timeless hand-embroidery goldwork craftsmanship.
+Embroidery is the hero, the proof of mission authenticity.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery, flat surface, no 3D, no metallic sheen, low
+quality thread, fake gold, synthetic appearance, uneven stitching, loose threads,
+fraying edges, poor lighting, flat lighting, no shadow detail, no texture, pixelated,
+watermark, text overlay, cheap material, wrinkled, stains, overexposed, no contrast
+```
+
+---
+
 *Design V2-06 · FPT Telecom 30 Years · Top 50 Honor Sash · Version 2 · 2027*
 
 ---

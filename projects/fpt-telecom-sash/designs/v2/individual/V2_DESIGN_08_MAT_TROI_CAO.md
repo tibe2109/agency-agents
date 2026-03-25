@@ -254,6 +254,156 @@ obscured sash, dark sky, overcast weather, low resolution
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Vietnamese professional man, 30–40 years old, strong natural presence, authentic
+Vietnamese features, warm tan skin with golden hour glow. Expression: radiant solar
+confidence — eyes half-closed against imaginary light, a wide genuine smile of someone
+who has seen the sunrise 30 times and never once taken it for granted. Not theatrical,
+not posed — the deeply natural joy of a man who knows his own worth.
+
+Wearing an ivory or cream open-collar shirt with minimal gold detail, or a tailored
+navy blazer over a gold-accent tee — outfit catching the warm golden hour light and
+complementing the amber-gold sash palette without competing.
+
+SASH: He wears the V-notch commemorative silk sash correctly — centered V-notch at
+neck, two panels falling down his chest with natural masculine drape. Navy base
+(#002D6E) with heat-embossed FOX-SUN motif centered: circular 14cm fox face as radiant
+sun, teardrop eyes with white sparkle highlights, small triangular gold nose, gentle
+arc smile, warm amber-to-cream fur gradient (#E8820C to #F5E6C8), subtle blush on
+cheeks. Two fox ears as the two largest sunrays at 10 o'clock and 2 o'clock. Thirty
+gold foil sunrays radiating outward, micro-numbers 1–30 in navy. "TOP 50 FTEL" ring
+halo in gold foil surrounds the face. "30 · 1997 · 2027" arc banner below chin.
+Warm 2700K key light makes gold foil rays blaze and the embossed fox face cast subtle
+3D shadow play. Rim light defines sash edges against his clothing.
+
+POSE: Solar expansion pose — slightly different from the female's wide-arms embrace.
+One arm raised higher, pointing upward at the sky, the other arm extended to the side
+at shoulder height — the gesture of someone charting a course, pointing toward the
+next horizon. Chest lifted, chin slightly raised, feet planted. The energy is directed
+outward and upward — a pioneer pointing the way.
+
+STAGE ENVIRONMENT (soft bokeh background): Same outdoor golden hour rooftop ceremony
+space — city skyline in deep bokeh, sky gradient from navy above to liquid gold at
+horizon, warm afternoon sun from camera-right as natural light source. Sun flare creates
+natural starburst effect in frame.
+
+LIGHTING: Warm afternoon sun 3000K from camera-right at 45 degrees as dominant key
+light — this is golden hour. Makes his warm skin tone luminous and the sash gold foil
+rays blaze with natural starburst lens effect. Soft reflector fill from camera-left.
+Hair backlight creates sun-kissed rim glow.
+
+MOOD: National Geographic meets Vogue Vietnam. The quiet triumph of a man who built
+something meaningful and is fully present in this moment of acknowledgment. Solar
+energy, grounded confidence, Vietnamese masculine pride. Asian Vietnamese model,
+not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, indoor studio, cold blue lighting, stiff corporate
+pose, arms at sides defensively, sad expression, no warmth, obscured sash, overcast
+weather, harsh daylight, dark environment, overly muscular, aggressive stance,
+feminine styling, watermark, text overlay, flat lighting
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Sun Ray Texture Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+positioned to catch warm directional golden hour light from 45 degrees — simulating
+outdoor morning light to match the design's solar concept.
+
+FABRIC DETAIL: 100% Mulberry Charmeuse Silk, 22 Momme, satin weave. Deep navy base
+(#002D6E) showing characteristic liquid silk surface. The swatch is positioned to show
+the center of the FOX-SUN motif: the radiant fox face in warm amber-to-cream gradient
+(#E8820C center to #F5E6C8 muzzle area), with 6–8 gold foil sunrays radiating outward
+in a partial "starburst" composition within the swatch frame. Each visible ray is
+approximately 12mm long, hot foil gold (#D4A017) against the navy silk — catching the
+directional light with brilliant specular flare. At the edge of the fox face: partial
+view of "TOP 50 FTEL" ring text in gold foil.
+
+TEXTURE EMPHASIS: Heat-embossed fox face area shows subtle 3D relief — approximately
+0.2mm raised above the surrounding charmeuse surface. Under raking light, this emboss
+creates fine shadow lines following the contours of the fox face design, creating
+dimensional depth visible in macro. The charmeuse satin surface shows characteristic
+liquid light reflection: deep matte in shadow areas, brilliant specular white in
+highlight zones. Gold foil rays contrast sharply — their reflective metallic surface
+blazes against the liquid silk matte of the navy base.
+
+SCALE REFERENCE: Millimeter ruler at edge showing actual ray length and fox face circle
+dimension. Drop shadow suggests dimensionality.
+
+MOOD: High fashion textile editorial — like a Versace fabric archive detail or luxury
+couture documentation. Celebrates the heat-embossing and hot-foil combination that
+makes this design unique. Solar energy in textile form.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry rays, dull foil, flat lighting, no emboss detail, no 3D shadow, cold blue tones,
+harsh studio lighting, human hands, wrinkled fabric, stains, synthetic material,
+watermark, text overlay, no texture, cheap print, neon colors, gradient banding,
+no sheen, overexposed gold, undersaturated navy
+```
+
+---
+
+### Prompt 5 — Embroidery & Foil Close-up (Sun Ray Detail)
+
+```
+Product photography: extreme close-up macro detail shot, approximately 8x8cm visible
+frame. Studio lighting with warm directional side-light and back-light to reveal gold
+foil texture and heat-emboss dimension — simulating the starburst effect of sunlight
+on the sash.
+
+FOIL & EMBOSS DETAIL (Primary Focus): A cluster of 5–7 gold foil sunrays radiating
+outward from the edge of the FOX-SUN face, with partial view of the "TOP 50 FTEL"
+ring halo text in cold foil. Clearly visible:
+- Hot foil gold rays (#D4A017): each ray approximately 12mm long × 3mm wide at base,
+  tapering to 1mm at tip. Hot foil surface shows characteristic stamping texture —
+  very slightly irregular at microscopic level, not perfectly smooth, suggesting
+  artisanal luxury rather than cheap flat metallic print
+- The ray edges are crisp against the navy charmeuse background — clean die-cut edges
+  from the hot foil stamping process
+- One ray bears a micro navy number "9" (representing year 2006, the AAG year) —
+  visible as navy ink on gold foil, approximately 1.5mm tall
+- The cold foil ring text "TOP 50 FTEL" (partial): cold foil has slightly cooler,
+  more mirror-like finish compared to warm hot foil rays — two distinct metallic
+  qualities visible simultaneously
+- Heat-embossed circle edge where fox face meets surrounding fabric: subtle ridge
+  approximately 0.2mm high, casting a fine shadow line under raking light
+
+SECONDARY DETAIL: Navy charmeuse silk background showing satin weave sheen;
+partial blush-pink dot on fox cheek visible at frame edge; 2mm gold border thread
+along sash edge.
+
+TEXTURE & LIGHT: Warm directional side-light causes hot foil to blaze with brilliant
+gold flare while cold foil ring shows cooler shimmer — the two foil types create two
+distinct light responses in one frame. Back-light creates fine luminous rim on all
+foil edges. The charmeuse silk between foil elements shows liquid surface quality.
+
+REFERENCE SCALE: Millimeter ruler at edge. MOOD: Luxury foil-stamping craftsmanship
+documentation — like Cartier jewelry manufacturing detail or Dior couture couching
+photography. The story: 30 rays of light, each a year, hand-stamped in gold.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Foil Detail):**
+```
+blurry rays, flat gold, no texture difference between foil types, dull surface,
+harsh lighting, flat lighting, no shadow detail, no emboss ridge, pixelated
+photography, watermark, text overlay, stains, overexposed, cold blue tones,
+no contrast, smeared foil edges, cheap metallic ink
+```
+
+---
+
 *Design V2-08 · FPT Telecom 30 Years · Top 50 Honor Sash · Version 2 · 2027*
 
 ---

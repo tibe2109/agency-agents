@@ -304,6 +304,165 @@ overly retouched skin, artificial smile, neon lighting, dark moody atmosphere
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Award ceremony stage portrait, full body 3/4 angle, 85mm lens f/3.2, shallow depth
+of field. Vietnamese man, naturally handsome, 28-35 years old, warm confident
+expression — genuine smile with quiet pride, relaxed and natural. Wearing a tailored
+navy suit jacket with minimal gold accent pocket square, sophisticated but approachable.
+Hair styled neatly with soft texture.
+
+SASH: He wears a V-notch commemorative silk sash draped correctly: V-notch centered
+at the neck, two panels falling down his chest with natural drape. The sash displays
+the smooth gradient from deep navy at bottom to warm marigold gold at top. A charming
+flat-art chibi fox in warm tangerine is visible on each panel, with the tail curving
+upward in a graceful S-shape, blending into the gold gradient like a natural ray of
+light. Gold embroidered "TOP 50 FTEL" badge and "30" numeral visible near the hem.
+Warm 2700K key light from 45 degrees catches the gold foil embroidery, gold gradient,
+and fox tail tip, making them radiate. Rim light separates sash from his shoulder.
+
+POSE: Calm, celebratory confidence — one arm relaxed at side, opposite arm slightly
+raised with open palm (not quite shoulder height), or both arms at comfortable sides
+with natural hand positioning. Chest slightly lifted, standing with quiet dignity.
+Face tilted slightly toward light with genuine warm smile. Body language conveys:
+"I earned this, and I'm genuinely grateful." Weight slightly on one foot for natural
+asymmetry.
+
+STAGE ENVIRONMENT (soft bokeh background): Same grand award ceremony stage as female
+model — deep navy velvet curtain backdrop, warm gold spotlights raining from above,
+sparse gold confetti drifting gently. The atmosphere is elevated celebration without
+excess. Warm golden ambient light fills the stage.
+
+LIGHTING: Warm key light 2700K from camera-left 45 degrees, catching the sash
+gradient and making the gold fox tail and embroidery glow warmly. Soft fill light
+opposite side. Backlight creates rim glow on shoulders. Stage spotlights in background
+create bokeh gold circles.
+
+MOOD: Vogue Vietnam editorial meets understated confidence. Pride, gratitude,
+timeless celebration. The energy of quiet achievement and humble confidence. Not
+attention-seeking, but deeply present in the moment. Asian Vietnamese model, not
+Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, sad expression, stiff serious pose, arms crossed,
+casual clothing, plain background, flat lighting, wrinkled sash, gradient banding,
+watermark, text overlay, overly muscular appearance, aggressive expression, oversized
+suit, dark moody atmosphere, blurry sash details, neon lighting
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Gradient Texture
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on neutral photography board or held at slight angle. Studio lighting with
+careful gradient control and raking side-light to emphasize both the color gradient
+and silk weave texture.
+
+FABRIC DETAIL: 100% Mulberry Jacquard Silk, 22 Momme, jacquard weave. The swatch
+displays the iconic smooth vertical gradient: deep ocean navy (#002D6E) at the bottom
+transitioning through cobalt blue (#1C5BA8) at midpoint to warm amber-gold (#E8A017)
+and marigold gold (#FFB81C) at the top. The gradient shows zero banding — perfectly
+smooth, multi-stop gradient suggesting professional acid-dye technique. Approximately
+40% of the visible swatch shows the charming flat-art chibi fox illustration in warm
+tangerine (#E8632A) with cream belly detail, positioned in the lower portion of the
+gradient. The fox's tail curves upward, its color transitioning from tangerine to amber
+to gold at the tip — the tail becomes part of the gradient itself, dissolving smoothly.
+
+TEXTURE EMPHASIS: Raking side-light (45 degrees) reveals the subtle jacquard weave
+texture — diagonal twill crosshatch pattern visible under magnification. The Jacquard
+structure creates micro-topography that catches light differently than charmeuse,
+giving the gradient additional dimensional richness. Satin face shows characteristic
+lustrous sheen, with highlights that emphasize the golden tones in the upper portion
+of the swatch.
+
+SILK DRAPE: The swatch is photographed with subtle natural drape (not completely flat),
+showing how the silk naturally falls and folds, demonstrating the luxury hand-feel.
+Fine natural wrinkles in the fabric become part of the aesthetic, suggesting quality
+and organic beauty.
+
+FINISHING DETAIL: One edge shows the 1mm gold metallic thread border, demonstrating
+the finished edge quality.
+
+MOOD: Luxury material study — like a Hermès fabric swatch or high-end textile archive.
+Emphasizes the journey from navy/formal at the bottom to golden/celebration at the top.
+The fox character is positioned to "climb" the gradient, reinforcing the "ascent" concept.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry gradient, banding stripes, pixelated, low resolution, flat lighting, harsh
+shadows, human hands, wrinkled fabric surface, stains, dirt, unfinished edges,
+synthetic material, dull sheen, watermark, text overlay, uneven dye, color bleeding,
+yellow or orange background, neon colors, cheap polyester, cartoon fox, aggressive
+fox character, no weave texture, no silk sheen
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot of embroidered logo area,
+approximately 8x8cm visible frame. Professional studio lighting with directional
+side-light and subtle backlight specifically designed to emphasize embroidery thread
+dimension, stitching detail, and 3D raised effect.
+
+EMBROIDERY DETAIL (Primary Focus): The "TOP 50 FTEL" shield-shaped badge in raised
+goldwork embroidery, approximately 2.5cm × 1.8cm, and the "30" numeral with double
+gold border below it (approximately 1.5cm tall). Both elements are executed in luxury
+22-karat gold thread with 3D raised effect through padding stitches. Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, and backstitch
+  technique variations
+- "TOP 50" lettering in bold goldwork with tight, precise stitching
+- "FTEL" wordmark rendered with elegant serif-influenced letterforms in gold
+- The shield-shaped border of the badge with crisp defined edges
+- Navy silk background (#002D6E) surrounding the badge, showing the jacquard weave
+  texture distinctly
+- Actual metallic sheen of 22K gold thread catching the directional light, creating
+  brilliant sparkle and depth
+- Thread knots and individual fiber angles visible at macro scale, showing hand-craft
+  quality and precision
+- The padding beneath the surface threads casting subtle shadows that define the 3D
+  raised dimension
+
+SECONDARY DETAIL: Visible at frame edges — the gradient silk background transitioning
+from navy upward, the 1mm gold metallic border edge stitch, and part of the "1997–2027"
+serif lettering in smaller goldwork below the shield.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) emphasizes the full 3D architecture of
+the raised embroidery — every stitch, every shadow between threads, thread thickness,
+fiber angles, the underlying padding structure. Back-light creates a fine luminous rim
+around thread edges without overwhelming detail. The contrast between the matte navy
+silk and the brilliant metallic gold is sharp and striking.
+
+REFERENCE SCALE: Fine metric ruler or grid at frame edge to show the actual size of
+embroidery elements, helping viewers understand the craftsmanship detail and precision.
+
+MOOD: Luxury heritage craftsmanship — like Hermès embroidery documentation or vintage
+luxury brand archive photography. Celebrates the "premium hand-craft meets luxury heritage"
+story: formal, timeless, technically perfect. The embroidery is the hero, not the
+surrounding fabric.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery, flat surface, no 3D dimension, no metallic sheen,
+low quality thread, fake gold, synthetic appearance, uneven stitching, loose threads,
+fraying, poor lighting, flat lighting, no shadow detail, no texture, pixelated
+photography, watermark, text overlay, cheap polyester, wrinkled fabric, stains,
+background too bright, overexposed, undersaturated colors, no contrast, blurry detail
+```
+
+---
+
 *Design V2-01 of 5 · FPT Telecom 30th Anniversary V2 · "Khí Phách Tiên Phong 1997–2027"*
 *Version 2 — Fun Element: FOX Chibi Golden Ascent*
 

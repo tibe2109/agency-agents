@@ -318,6 +318,156 @@ neon club lighting, heavy makeup mask, overly retouched, casual jeans outfit
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Night ceremony portrait, full body 3/4 angle, 85mm lens f/2.8, shallow depth of
+field. Vietnamese man, naturally handsome, 28-35 years old, serene confident energy
+— warm genuine smile, eyes reflecting the night sky like he is reading stars, calm
+presence. Wearing a deep navy ao dai with subtle gold constellation embroidery, or
+tailored navy suit jacket with elegant simplicity, conveying both tradition and
+modernity.
+
+SASH: He wears the V-notch commemorative silk sash correctly: centered V-notch at
+neck, two panels falling down his chest. The sash shows deep navy field with 30 gold
+kawaii-style stars distributed naturally — 29 standard stars with gently curved ray
+tips, and one special larger FOX STAR near the upper center with subtle fox-face
+features. The FOX STAR is clearly the focal star in the constellation. Goldwork
+"TOP 50 FTEL" hexagonal badge visible at lower corners. Warm 2700K key light from
+45 degrees makes each Lurex star glint and the goldwork badges glow. Rim light traces
+the edge of the sash panels.
+
+POSE: Calm, grounded stance — one hand raised at shoulder height, palm open and facing
+upward in a gesture of offering or blessing (rather than pointing), the other hand
+relaxed at his side, lightly touching the sash near the FOX STAR. Face is tilted
+slightly with a serene, knowing smile — "I have walked through 30 years and I am at
+peace." Weight slightly shifted, legs grounded, no movement — meditative confidence.
+
+STAGE ENVIRONMENT (soft bokeh background): Outdoor night ceremony venue — open sky
+above with real stars visible in the deep background bokeh. Elegant ceremony pavilion
+partially visible, warm ceremony lanterns provide soft golden ambient glow. Soft
+moonlight from above. Atmosphere is serene, contemplative, and celebratory at once.
+
+LIGHTING: Warm key light 2700K from 45 degrees camera-left, hitting his face and
+the sash, making each Lurex star flicker with gold warmth. Soft fill opposite side
+creates gentle definition. Backlight from lanterns behind creates soft rim glow on
+hair and shoulders. Overall: luminous, peaceful, warm.
+
+MOOD: Vogue Vietnam editorial with meditative quiet confidence. Wisdom, serenity, and
+gratitude coexisting. The energy of someone who has earned this moment through steady
+presence. Not hyper-energetic like the female model, but equally dignified. Asian
+Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, daytime outdoor, harsh sunlight, stiff pose,
+arms crossed defensively, serious grim expression, no smile, sad face, no sash visible,
+blurry sash details, synthetic fabric, watermark, text overlay, overly muscular,
+aggressive expression, casual outfit, neon club lighting, dark moody atmosphere
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Constellation Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on neutral photography board at slight angle. Studio lighting setup with
+raking side-light at 45 degrees to emphasize weave texture and star shimmer.
+
+FABRIC DETAIL: 100% Mulberry Jacquard Silk, 22 Momme, dobby micro-weave. Background
+color is navy deep (#002D6E) showing characteristic even dark field. The swatch
+displays the gold Lurex star pattern clearly: approximately 15–20 gold stars visible
+within the frame, varying in size from 6mm to 12mm. 29 standard stars in marigold
+gold (#FFB81C) with 4–6 softly curved ray tips (not sharp points — tips bend like
+comma strokes). Each star has a faint pale gold glow aura. One larger star (~12mm)
+with warmer amber gold (#E8A017) represents the FOX STAR, with visible miniature
+fox-face detail in the center: two tiny round eyes and triangular nose.
+
+TEXTURE EMPHASIS: Raking light reveals the subtle dobby weave texture — micro-hexagon
+repeat pattern (3mm) visible across navy background. The weave creates a "celestial
+grain" effect. Gold Lurex yarn catches the side-light, creating individual star
+sparkle. Satin face of Jacquard shows characteristic lustrous sheen with bright
+specular highlights on the gold stars.
+
+REFERENCE OBJECTS: Optional small scale reference — millimeter ruler at edge of frame
+to show actual star size. Subtle drop shadow on fabric suggests dimensionality.
+
+CONSTELLATION DETAIL: One edge shows the finished 1mm gold metallic thread border.
+
+MOOD: Technical luxury material study. Like a Hermès celestial textile archive or
+Dior Night Sky fabric swatch. Emphasizes the craftsmanship of weaving gold Lurex
+into silk jacquard. Starfield that twinkles.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry stars, flat stars, sharp Christmas star points, gradient banding, low
+resolution, pixelated photography, human hand, wrinkled fabric, stains, dirt,
+unfinished edge, synthetic material, dull sheen, watermark, text overlay, harsh
+shadow, flat lighting, no texture, no weave detail, cheap polyester, overexposed,
+undersaturated colors, no star shine
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot of embroidered logo area,
+approximately 8x8cm visible frame. Studio lighting with directional side-light and
+subtle backlight to emphasize embroidery dimension and gold thread craft.
+
+EMBROIDERY DETAIL (Primary Focus): The "TOP 50 FTEL" hexagonal badge in raised
+goldwork embroidery, approximately 2.8cm × 2.4cm. The hexagon design (evoking beehive
+strength and collective power) is executed in luxury 22-karat gold thread with 3D
+raised effect through padding stitches. Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, and backstitch
+  technique variations
+- "TOP 50" lettering in bold goldwork with tight stitching
+- "FTEL" wordmark below in elegant letterforms, also in goldwork
+- Hexagon border crisp and well-defined with fine gold thread outline
+- Navy silk background (#002D6E) surrounding the badge, showing dobby weave texture
+  distinctly — micro-hexagon pattern visible alongside the embroidered hexagon
+- Actual metallic sheen of 22K gold thread catching directional light, creating
+  brilliant sparkle and depth
+- Individual stitch angles and thread fiber detail visible at macro scale, showing
+  hand-craft precision
+- Padding beneath creating 3D raised dimension with subtle shadows between threads
+
+SECONDARY DETAIL: Visible at frame edges — partial view of other gold stars from the
+constellation on the surrounding navy silk, the 1mm gold metallic border edge stitch,
+and the microtexture of jacquard dobby weave.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) emphasizes the full 3D architecture
+of raised embroidery — every stitch, shadow between threads, thread thickness, fiber
+angles, underlying padding structure. Back-light creates fine luminous rim around
+thread edges. Contrast between matte navy and brilliant metallic gold is striking.
+
+REFERENCE SCALE: Fine metric ruler or grid at frame edge to show badge actual size
+(2.8cm × 2.4cm), helping viewers understand craftsmanship precision.
+
+MOOD: Luxury heritage embroidery — like Hermès documentation or vintage luxury brand
+archive. Celebrates the contrast: geometric hexagon (modern strength symbol) executed
+in traditional hand-embroidery goldwork (timeless craft). Embroidery is the hero of
+this shot.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery, flat surface, no 3D dimension, no metallic sheen,
+low quality thread, fake gold, synthetic appearance, uneven stitching, loose threads,
+fraying edges, poor lighting, flat lighting, no shadow detail, no texture, pixelated
+photography, watermark, text overlay, cheap polyester, wrinkled fabric, stains,
+background too bright, overexposed, undersaturated colors, no contrast, blurry detail
+```
+
+---
+
 *Design V2-02 of 5 · FPT Telecom 30th Anniversary V2 · "Khí Phách Tiên Phong 1997–2027"*
 *Version 2 — Fun Element: FOX Star Hidden in 30-Star Constellation*
 

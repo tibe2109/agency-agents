@@ -265,6 +265,166 @@ bright neon environment, anime proportions, low resolution, flat lighting
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Vietnamese professional man, 35–45 years old, distinguished and grounded, authentic
+Vietnamese features — warm tan skin, natural strong bone structure, the bearing of
+someone who has earned respect through decades of dedication. Expression: serene,
+deeply proud — a quiet smile that carries the weight of 30 years of cultural pride,
+eyes warm and present. Not stiff, not corporate — the dignity of a Vietnamese elder
+who is also absolutely contemporary.
+
+Wearing a traditional Vietnamese ao dai for men (áo dài nam) in deep navy with subtle
+gold brocade detail at collar and cuffs, or a tailored black mandarin-collar suit
+with minimal gold accent pocket square — either choice representing the fusion of
+Vietnamese tradition and modern excellence.
+
+SASH: He wears the V-notch commemorative silk sash correctly — centered V-notch at
+neck, two panels falling down his chest with natural drape over the ao dai. Navy
+jacquard brocade base with subtle fish-scale texture (#002D6E + #003585). Center
+motif: stylized FOX in Dong Son aesthetic — geometric bold-outline, amber lông màu
+(#D4780A), wearing miniature ao dai navy with gold belt, seated in meditation pose
+with hands folded gently, crescent-moon happy eyes, tail curling in Dong Son spiral.
+Surrounding rings in gold thread embroidery: Dong Son wave pattern, twelve cute Lac
+birds in circle, eight lotus flowers crimson and gold. Above FOX: diamond-shaped
+ấn chương (seal) "TOP 50 FTEL" in deep gold foil (#B8860B). Crimson 1mm edge border.
+Large golden lotus at V-notch. Warm 2700K key light makes gold thread embroidery
+shimmer gently and continuously.
+
+POSE: Measured ancestral confidence — standing with both feet planted, hands clasped
+lightly before him in traditional Vietnamese respectful posture, or one hand open at
+his side in a gentle welcoming gesture toward the viewer. Head slightly inclined in
+a gesture of dignified greeting. The pose echoes the FOX character on the sash: quiet,
+centered, enlightened confidence. Body faces 3/4 toward camera.
+
+STAGE ENVIRONMENT (soft bokeh background): Vietnamese cultural ceremony hall — similar
+to the female model's setting. Traditional wooden architecture with ornate carved
+pillars, red and gold silk lanterns overhead casting amber pools of glow, bamboo and
+lacquered stone texture. Atmosphere of sacred cultural pride and ceremonial dignity.
+
+LIGHTING: Warm amber key light 2700K from camera-left 45 degrees — lantern light
+quality. Gold thread embroidery on sash catches the warm light with continuous gentle
+shimmer (not flash-foil sparkle — the quieter, deeper glow of woven gold). Soft fill
+from opposite side. Backlight creates luminous rim on ao dai shoulders and hair.
+
+MOOD: Vogue Vietnam cultural heritage editorial. Ancestral pride meeting contemporary
+excellence. The energy of a man who has chosen to carry his culture with him as he
+leads. Vietnamese masculine dignity at its most refined. Asian Vietnamese model,
+not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, modern Western business suit without cultural
+reference, cold blue tones, stiff robotic pose, arms crossed, tense expression,
+no smile, no warmth, sash hidden or blurry, bright neon background, modern minimalist
+interior, anime proportions, watermark, text overlay, overly formal stiffness
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Brocade Heritage Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+placed on an ancient stone surface or dark lacquered wood — evoking the pagoda
+courtyard setting of the design. Studio lighting with warm amber directional key light
+from 45 degrees and raking side-light to reveal the brocade texture and embroidery
+dimensional quality.
+
+FABRIC DETAIL: 100% Mulberry Jacquard Brocade Silk, 22 Momme. Navy deep (#002D6E)
+brocade base with visible fish-scale jacquard weave pattern — fine diamond/scale
+texture catching the raking light as a subtle topographic shimmer. The swatch shows
+the inner rings of the Dong Son motif: gold Lurex thread embroidered wave pattern
+in the first ring, with partial view of cute Lac bird (approximately 8mm wingspan,
+gold and amber thread, crescent-dot eyes visible at macro). One lotus flower visible:
+crimson petal (#C0392B) with marigold gold center stamen — the crimson color is vivid
+and pure against the navy background.
+
+TEXTURE EMPHASIS: Raking side-light reveals two distinct surface levels — the brocade
+base fabric (slight topographic scale texture) and the raised gold thread embroidery
+(satin stitch areas raised 0.5–1mm above the base fabric). This dimensional difference
+is clearly visible in macro: embroidered elements stand above the woven base with
+their own micro-shadows. The gold Lurex embroidery thread creates warm continuous
+shimmer — different from foil (no flash, all glow). Crimson lotus petal shows the
+discharge reserve printing area where color meets the navy — a clean precise boundary.
+
+FINISHING DETAIL: One edge shows the unique crimson 1mm thread border (signature
+element — unlike other designs using gold border). The crimson edge against navy
+demonstrates the cultural intention clearly.
+
+REFERENCE SCALE: Millimeter ruler at edge showing Lac bird actual size and
+embroidery stitch density. MOOD: Luxury heritage textile conservation photography —
+like Trống Đồng Ngọc Lũ museum documentation meets Hermès brocade archive.
+Celebrates Vietnamese textile heritage executed in luxury silk.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry embroidery, dull gold thread, flat surface, no 3D raised embroidery, no
+brocade texture, cold blue tones, harsh lighting, flat lighting, human hands,
+wrinkled fabric, stains, synthetic material, watermark, text overlay, incorrect
+Vietnamese motifs, Western ornamental patterns, neon colors, cheap polyester,
+no silk sheen, crimson border missing
+```
+
+---
+
+### Prompt 5 — Ấn Chương & Embroidery Close-up (Heritage Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot, approximately 8x8cm visible
+frame. Studio lighting with warm amber directional side-light and back-light to reveal
+the full dimensional layering of this design's multiple craft techniques.
+
+MULTI-TECHNIQUE DETAIL (Primary Focus): The diamond-shaped ấn chương (seal stamp)
+"TOP 50 FTEL" in deep gold foil (#B8860B), approximately 3.5×3.5cm in diamond
+orientation (rotated 45°). Clearly visible:
+- Hot foil deep gold (#B8860B): this is a darker, more antique gold than standard
+  marigold — the color of aged bronze seal, not bright modern gold. Surface shows
+  foil stamping texture with slight warmth.
+- Double-line diamond border: two concentric diamond outlines in fine foil lines,
+  1mm spacing between them — precision stamping
+- "TOP 50 FTEL" text in tetragonal letterforms inside the diamond — even spacing,
+  squared aesthetic suggesting East Asian seal tradition
+- Eight lotus petals radiating from the diamond corners in gold thread — satin stitch
+  embroidery, each petal approximately 8mm long, raised 0.8mm above the foil surface,
+  creating a mandala-like corona around the seal
+- The ấn chương sits on the navy brocade base — fish-scale jacquard texture visible
+  around the seal edges, providing contrast and texture reference
+
+SECONDARY DETAIL: Partial view of the Dong Son wave pattern embroidery ring (gold
+Lurex satin stitch waves, slightly raised, continuous shimmer); one crimson lotus
+petal visible at frame edge (the only non-gold, non-navy color — vivid contrast);
+navy brocade fish-scale pattern extending to frame edges.
+
+TEXTURE & LIGHT: Warm amber side-light at 45 degrees creates deep warm shadows in the
+lotus petal recesses and between brocade fish-scale elements, revealing the full 3D
+layering. The deep gold foil absorbs some ambient light and reflects warm amber tones —
+very different from bright hot foil. Multiple surface heights create a complex shadow
+map that reveals the design's craft complexity.
+
+REFERENCE SCALE: Millimeter ruler showing seal diamond at 3.5×3.5cm.
+
+MOOD: Museum-quality heritage seal documentation. Celebrates the irony: an ancient
+Vietnamese ấn chương form used as a corporate excellence seal in 2027. Traditional
+meets contemporary in one exquisite macro composition.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Seal Detail):**
+```
+blurry seal, flat gold (no depth), bright modern gold (should be antique bronze-gold),
+no lotus petals, no brocade texture visible, flat lighting, harsh lighting, cold blue
+tones, no 3D dimension in embroidery, machine quality, incorrect Vietnamese seal form,
+watermark, text overlay, stains, overexposed, cheap metallic appearance
+```
+
+---
+
 *Design V2-09 · FPT Telecom 30 Years · Top 50 Honor Sash · Version 2 · 2027*
 
 ---

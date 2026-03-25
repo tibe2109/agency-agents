@@ -339,6 +339,162 @@ oversaturated neon rave aesthetic, heavy club makeup, cheap fast-fashion outfit
 
 ---
 
+### Prompt 3 — Male Model & Stage Shot (Pair Composition)
+
+```
+Creative studio portrait, full body straight-on slightly angled, 85mm lens f/3.2,
+shallow depth of field. Vietnamese man, naturally handsome, 28-35 years old, cool
+confident energy — genuine playful expression, slight smirk or relaxed smile, eyes
+bright with quiet pride. Not stiff, not overly serious. Wearing modern business casual
+tech-founder aesthetic: tailored navy blazer or dark high-tech jacket over a navy tee
+or subtle gold-accent shirt, tailored dark trousers, optional minimal accessories
+(watch, simple ring).
+
+SASH: He wears the V-notch commemorative silk sash correctly: centered V-notch at
+neck, two panels draped down his chest with natural masculine drape. Bottom zone of
+the sash shows the 8-bit pixel art fox clearly — blocky retro gold pixels on navy.
+The middle zone shows the 16-bit evolving fox with tangerine color emerging. The top
+zone near his collar shows the smooth vector chibi fox in full color. The progress bar
+runs along the left edge glowing like LED. Goldwork "TOP 50 FTEL" pixel badge visible
+at lower hem. Warm 2700K key light from 45 degrees makes the gold pixel elements and
+embroidery glow; satin charmeuse surface catches light with subtle specular reflection.
+Rim light outlines the sash edges and defines shoulder silhouette.
+
+POSE: Confident, relaxed stance — weight slightly on one side, hands either relaxed
+at sides with subtle gesture (one hand raised slightly to chest or hip), or one arm
+raised with a subtle victory gesture (index & middle finger pointing upward in a "V"
+shape — tech/gaming reference). Head tilted slightly toward camera with natural
+asymmetry. Overall vibe: tech entrepreneur who just shipped something great and is
+quietly pleased about it.
+
+STAGE ENVIRONMENT (bokeh background): Same creative studio space as female model —
+deep navy feature wall with retro pixel-art neon signs ("FPT" or gaming patterns)
+glowing in soft amber and gold. Retro gaming setup on side table visible in soft bokeh:
+CRT monitor, vintage peripherals, tech books, LED strips. Warm amber and cool blue LED
+ambient glow creates layered bokeh circles. Atmosphere is creative tech chic.
+
+LIGHTING: Warm key light 2700K from camera-left 45 degrees illuminating his face and
+making the sash gold elements sparkle. Cool blue LED fill from camera-right adds subtle
+tech-lab tonality. Hair backlight creates rim glow. Neon signs in background produce
+additional warm bokeh points.
+
+MOOD: Confident editorial — Wired or TechCrunch photoshoot energy. Quiet pride, maker
+energy, cool-factor. The energy of someone building the future while honoring the past.
+Not hyper-energetic like the female model, but equally confident. Asian Vietnamese model,
+not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, sad face, stiff corporate pose, overly muscular,
+serious expression, arms crossed defensively, plain white background, harsh daylight,
+gradient banding on sash, blurry sash pixels, anti-aliased pixel art, watermark, text
+overlay, oversaturated neon rave aesthetic, cheap fast-fashion outfit, feminine styling
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Texture Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on a neutral photography board or held at slight angle. Studio lighting setup
+with raking side-light at 45 degrees to emphasize surface texture and weave detail.
+
+FABRIC DETAIL: 100% Mulberry Charmeuse Silk, 22 Momme, satin weave. Background color
+is navy deep (#002D6E) showing the crisp satin sheen. The swatch displays the pixel
+art pattern clearly: small 8-bit pixel grid in marigold gold (#FFB81C) forming blocky
+shapes and a partial pixelated fox character (visible head and part of body, each pixel
+exactly 4mm square with sharp crisp edges). The pixel pattern fills approximately 60%
+of the visible swatch area, with the remaining 40% showing clean navy background.
+
+TEXTURE EMPHASIS: Raking light reveals the subtle diagonal twill texture of the
+charmeuse weave — fine crosshatch pattern visible under magnification. Satin face
+shows characteristic specular highlights that "glow" under the key light, creating the
+illusion of the pixels themselves being slightly luminous. Very fine horizontal scanline
+texture overlay (subtle, like a retro CRT monitor screen) becomes visible only under
+raking light — this is a design element suggesting "screen" aesthetic, with lines spaced
+~2mm apart, very faint but detectable. The scanline texture is woven-in subtly, not
+printed aggressively.
+
+REFERENCE OBJECTS: Optional small scale reference — a coin or millimeter ruler at edge
+of frame to indicate actual pixel size (4mm per pixel). Subtle drop shadow on the fabric
+suggests dimensionality and separation from background.
+
+SWATCH MOUNTING: The swatch shows the finished edge with 1mm gold metallic thread
+border visible on one edge, demonstrating the border detail.
+
+MOOD: Technical, detailed, luxury material study. Like a Hermès fabric swatch card or
+high-end textile detail photography. Slightly cool-tinted lighting (5500K) reveals the
+navy true color while warm accent light (2700K) highlights the gold pixels and scanline
+texture.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry pixels, anti-aliased edges, gradient banding, low resolution, pixelated
+photography, human hand, wrinkled fabric, stains, dirt, unfinished edge, synthetic
+material appearance, watermark, text overlay, harsh shadow, flat lighting, no texture,
+no weave detail, smooth surface, cheap polyester, yellow or orange background, neon
+colors, poor quality silk, no scanline, no sheen
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Detail Shot)
+
+```
+Product photography: extreme close-up macro detail shot of embroidered logo area,
+approximately 8x8cm visible frame. Studio lighting with directional side-light and
+subtle backlight to emphasize embroidery thread dimension and stitching detail.
+
+EMBROIDERY DETAIL (Primary Focus): The "TOP 50 FTEL" pixel-art badge in raised
+goldwork embroidery, approximately 3cm × 2cm. The badge is designed in pixel-art style
+(8-bit aesthetic) executed in luxury 22-karat gold thread with 3D raised effect through
+padding stitches underneath. Clearly visible:
+- Individual gold thread stitches showing couching, satin-stitch, and backstitch
+  technique variations
+- Pixel-art "TOP 50" lettering rendered as blocky 8-bit shapes in tight gold stitching
+- "FTEL" wordmark below in similar goldwork, slightly 3D raised from the satin base
+- Navy silk background surrounding the badge, showing the charmeuse weave texture
+- Actual metallic sheen of 22K gold thread catching the side-light, creating sparkle
+  and dimension
+- Small gaps between stitches visible at 1:1 scale, showing hand-embroidery quality
+  (not machine-perfect, but precisely executed)
+
+SECONDARY DETAIL: Visible at edge of frame — partial view of the progress bar running
+vertically with small checkpoint marks in gold couching thread, and part of the 1mm
+gold metallic border edge stitch.
+
+TEXTURE & LIGHT: Raking side-light (45 degrees) reveals the full 3D dimensionality of
+the raised embroidery — shadows between individual stitches, thread thickness variation,
+the "architecture" of the padding beneath the surface threads. Back-light is subtle,
+just enough to create a fine rim glow around thread edges. Surface-level detail is
+crystal clear: every stitch direction, every knot, every metallic fiber's angle.
+
+REFERENCE SCALE: Fine millimeter grid or small metric ruler at edge to show actual
+size (3cm badge scale) — helps viewer understand the precision and craftsmanship.
+
+MOOD: Luxury craftsmanship detail. Like a zoomed Hermès embroidery guide or Cartier
+jewelry close-up. Emphasizes the "ironic luxury" concept: cutting-edge pixel-art
+design executed in traditional high-craft goldwork embroidery techniques. The contrast
+between retro-digital (pixels) and timeless-luxury (gold hand-embroidery) is the story.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry stitches, machine embroidery appearance, flat surface, no 3D dimension, no
+metallic sheen, low quality thread, fake gold, synthetic material, uneven stitching,
+loose threads, fraying edges, poor lighting, flat lighting, no shadow detail, no
+texture, pixelated photography, watermark, text overlay, cheap polyester, wrinkled
+fabric, stains, background too bright, overexposed, undersaturated colors, no contrast
+```
+
+---
+
 *Design V2-03 of 5 · FPT Telecom 30th Anniversary V2 · "Khí Phách Tiên Phong 1997–2027"*
 *Version 2 — Fun Element: 8-bit FOX Evolves + "LEVEL UP" Hidden Message*
 

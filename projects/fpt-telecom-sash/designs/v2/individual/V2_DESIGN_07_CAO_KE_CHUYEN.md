@@ -251,6 +251,150 @@ corporate headshot look, invisible sash, low resolution, flat lighting
 
 ---
 
+### Prompt 3 — Female Model & Stage Shot (Pair Composition)
+
+```
+Vietnamese professional woman, 30–38 years old, warm intellectual beauty, authentic
+Vietnamese features, graceful and refined. Expression: a knowing, enchanting smile —
+the look of someone who has just found the most fascinating passage in a beloved book,
+eyes bright with discovery and warmth. Not corporate, not stiff — the energy of a
+passionate educator or cultural preservationist who genuinely loves the stories she
+carries. Wearing a deep navy blouse or a modern navy ao dai with subtle gold detail
+at collar, elegant and understated.
+
+SASH: She wears the V-notch commemorative silk sash correctly — centered V-notch at
+neck, two panels falling down her chest with natural feminine drape. Navy jacquard
+base (#002D6E) with subtle bookpage texture. Left panel shows the FOX scholar chibi
+clearly: sitting cross-legged in miniature academic gown, round glasses, holding
+unrolled parchment-cream scroll with gold foil chapter markers — "1997 FOX Ra Đời",
+"2006 AAG", "2018 Fiber", "2027 30 Năm". Oval seal "TOP 50 FTEL" in deep gold foil
+at scroll head. Right panel: scroll continues with ornamental gold "30 · 1997–2027"
+closing chapter. Warm 2700K key light from 45 degrees makes gold foil chapter markers
+and parchment scroll area glow warmly. Rim light outlines the sash edges.
+
+POSE: Storytelling gesture — one hand raised with open palm, as if presenting a story
+to the viewer, fingers softly curved. The other hand lightly holding the sash near
+the scroll, drawing attention to the FOX scholar character. Body in soft 3/4 angle,
+slight lean forward suggesting invitation and engagement. Head tilted gently, eyes
+meeting the camera with warm intelligence.
+
+STAGE ENVIRONMENT (soft bokeh background): Grand library setting — floor-to-ceiling
+mahogany bookshelves in warm deep bokeh, amber reading lamps casting pools of gold
+light, leather-bound volumes and scrolls suggesting centuries of knowledge. Soft
+particles of warm dust floating in the lamplight create a magical atmosphere. The
+space feels like the archive of a great civilization.
+
+LIGHTING: Warm amber key light 2700K from camera-left 45 degrees — library lamp
+quality, intimate and warm. Soft fill from camera-right lifts shadows gently. Backlight
+from library lamps behind creates luminous rim glow on hair and shoulders. Gold foil
+scroll elements and parchment area catch the directional light warmly.
+
+MOOD: Harper's Bazaar Vietnam literary editorial. Intellectual warmth, cultural pride,
+storytelling joy. The energy of someone who has read 30 years of history and is
+delighted to share every chapter. Asian Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Female Model):**
+```
+Caucasian model, Western features, cold blue tones, stiff pose, corporate headshot,
+arms at sides, serious expressionless face, modern minimalist background, no gesture,
+sash invisible or blurry, harsh studio lighting, watermark, text overlay, heavy makeup
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Texture Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+mounted on a dark mahogany surface or aged leather-bound book cover for context.
+Studio lighting with warm amber directional key light at 45 degrees and subtle raking
+side-light to reveal weave texture and scroll pattern detail.
+
+FABRIC DETAIL: 100% Mulberry Jacquard Silk, 22 Momme, dobby jacquard weave. Background
+navy deep (#002D6E) with subtle bookpage texture — fine horizontal line pattern woven
+into the jacquard structure, visible as "paper grain" under raking light. The swatch
+displays the parchment-cream scroll area (#F2E8D0) occupying approximately 50% of the
+visible frame: smooth discharge-printed cream zone contrasting beautifully with the navy
+jacquard. Within the cream scroll area, marigold gold (#FFB81C) chapter marker ribbon
+header visible with "1997" lettering in warm gold. Fox scholar character partially
+visible: academic gown outline, round glasses detail in deep amber (#C67C00), at 2280dpi
+clarity showing individual illustrated linework.
+
+TEXTURE EMPHASIS: Raking side-light (45 degrees) reveals the jacquard weave structure —
+diagonal dobby texture across the navy zone. The discharge-printed parchment area shows
+a subtly different surface quality — slightly softer than the jacquard navy background,
+suggesting the discharge process removing dye to expose natural silk cream. Gold foil
+chapter marker header catches the warm key light with brilliant amber sparkle. Navy-to-
+parchment transition edge is crisp and clean, demonstrating precision discharge printing.
+
+FINISHING DETAIL: One edge shows the 1mm gold metallic thread border. Optional: a corner
+of an aged leather tome visible beneath the swatch for thematic resonance.
+
+REFERENCE SCALE: Millimeter ruler or coin at edge. MOOD: Luxury manuscript archive
+photography — like a Hermès documentary textile swatch or museum conservation photograph.
+Emphasizes the marriage of modern silk craftsmanship and ancient storytelling tradition.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+blurry detail, pixelated, low resolution, flat lighting, harsh shadows, human hands,
+wrinkled fabric, stains, synthetic material, watermark, text overlay, cold blue tones,
+no texture, no weave pattern, no parchment contrast, gradient banding, dull sheen,
+incorrect colors, neon lighting, white studio background
+```
+
+---
+
+### Prompt 5 — Logo & Embroidery Close-up (Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot, approximately 8x8cm visible
+frame. Studio lighting with warm amber directional side-light at 45 degrees and subtle
+back-light to emphasize the 3D raised dimension and gold foil craftsmanship.
+
+EMBROIDERY & FOIL DETAIL (Primary Focus): The oval seal badge "TOP 50 FTEL" executed
+in double hot foil stamping — outer ring in 22K gold foil, inner area with iridescent
+gold overlay creating two distinct metallic layers. The oval seal is approximately
+4×3cm, designed as a "book cover seal stamp" with double-ring border. "TOP 50 FTEL"
+lettering arcs around the oval center in spaced uppercase gold letters. Center of oval:
+a miniature open book icon in gold. Clearly visible under macro:
+- Hot foil surface texture: slight embossing from the stamping process, edges crisp
+- Two distinct gold finishes: hot foil (warmer, more matte) vs iridescent overlay
+  (cooler shimmer, catches light at different angles than hot foil)
+- The seal sits on parchment-cream silk (#F2E8D0) discharge area — silk texture
+  visible around the foil edges
+- Oval border lines are fine and precise — traditional wax seal aesthetic in foil
+
+SECONDARY DETAIL: At frame edges — gold foil chapter ribbon header with "1997" text
+partially visible; transition from parchment scroll area to navy jacquard background;
+1mm gold metallic border thread on one edge.
+
+TEXTURE & LIGHT: Warm amber directional key at 45 degrees catches the hot foil surface
+creating warm brilliant sparkle. Back-light provides fine rim glow around foil edges.
+The iridescent overlay creates a subtle rainbow shimmer at certain angles — visible in
+the macro shot as soft color play in the gold surface.
+
+REFERENCE SCALE: Millimeter ruler at edge showing seal actual size (4×3cm).
+
+MOOD: Luxury seal authentication photography — like a Hermès box closure detail or
+vintage wax seal archival macro. Celebrates the concept: a "book seal of excellence"
+in the language of luxury hot-foil stamping.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Embroidery):**
+```
+blurry foil, dull gold, flat surface, no iridescence, no 3D dimension, machine quality,
+fake gold, uneven stamping, poor detail, harsh lighting, flat lighting, no texture,
+pixelated photography, watermark, text overlay, cold blue tones, stains, overexposed,
+no contrast, parchment area missing, white background
+```
+
+---
+
 *Design V2-07 · FPT Telecom 30 Years · Top 50 Honor Sash · Version 2 · 2027*
 
 ---

@@ -283,6 +283,165 @@ low resolution, flat lighting, individual isolated subjects not interacting
 
 ---
 
+### Prompt 3 — Individual Male Model Solo Shot
+
+```
+Vietnamese professional man, 28–40 years old, naturally confident and warm, authentic
+Vietnamese features — warm tan skin, natural black hair, genuine easy smile. Expression:
+the private joy of someone who just found their own face in the constellation —
+discovering which fox dot expression matches his personality, a quiet "found it" delight.
+Not performative, not staged — an intimate, personal moment of discovery and belonging.
+
+Wearing a tailored dark navy suit jacket over a minimal gold-accent crew neck sweater
+or tee, modern and clean. Understated outfit to let the sash pattern speak.
+
+SASH: He wears the V-notch commemorative silk sash correctly — centered V-notch at
+neck, two panels falling down his chest. Navy charmeuse base (#002D6E). Both panels
+show the 50 gold fox dot constellation pattern: each dot 6mm diameter with micro fox
+face (two pointed ear-tips, two dot eyes, tiny nose), arranged in organic golden-ratio
+spiral. Three gold tone variations across dots: marigold (#FFB81C) dominant, pale gold
+(#F0D080) and warm amber (#E8820C) creating constellation depth. One 9mm leader dot
+visible at panel center with star-eyes. Cold foil "·30·" micro border pattern along
+edges. Warm 2700K key light makes gold foil dots shimmer with individual sparkle —
+like a living constellation. The overall effect at this shooting distance: the sash
+reads as a galaxy of tiny golden lights.
+
+POSE: He looks down at the sash with a small private smile — head slightly bowed,
+chin tucked, one hand raised to point gently at one specific fox dot with his index
+finger (the "excited" expression dot — the one that looks like him). The other hand
+rests naturally at his side. The pose is intimate and specific — this is a personal
+discovery moment, not a public display. Camera catches him from slightly above, looking
+down at this moment, before he looks up to share it.
+
+STAGE ENVIRONMENT (soft bokeh background): Warm anniversary celebration hall — string
+light canopy overhead creating golden bokeh points (each bokeh circle suggesting one
+of 50 pioneers), colleagues and celebration visible as warm blurred activity behind
+him. He is in his own moment within the collective celebration. Warm amber and gold
+ambient glow throughout.
+
+LIGHTING: Warm soft key light 2700K from camera-left at 45 degrees. Fill from
+camera-right. The main drama is between the warm ambient light and the individual
+sparkle of each fox dot on the sash as they catch different angles of the key light.
+
+MOOD: Intimate editorial — the single frame that captures why this design works: a
+person finding themselves among 50. Not the collective celebration shot, but the
+personal moment before it. Asian Vietnamese model, not Caucasian.
+--ar 2:3 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Male Model):**
+```
+Caucasian model, Western features, group shot, stiff corporate pose, arms at sides,
+serious expression, no discovery moment, plain white background, flat lighting,
+cold blue tones, blurry dots on sash, uniform identical dots, no constellation
+effect, watermark, text overlay, overly formal, dark gloomy venue
+```
+
+---
+
+### Prompt 4 — Fabric Swatch & Fox Dot Constellation Detail
+
+```
+Product photography: close-up macro of premium silk fabric swatch, 15x15cm square,
+photographed against a deep black surface to maximize contrast and make the gold dots
+appear as a true constellation. Studio lighting with warm directional key light from
+45 degrees and subtle raking side-light to reveal charmeuse sheen and micro fox detail.
+
+FABRIC DETAIL: 100% Mulberry Charmeuse Silk, 22 Momme, satin weave. Deep navy base
+(#002D6E) showing characteristic smooth satin surface with liquid light quality. The
+swatch shows approximately 15–20 fox dots from the 50-dot constellation, arranged in
+organic golden-ratio spiral fragment. Three gold tone variations clearly visible:
+- 8–10 Marigold gold (#FFB81C) dots: most vivid, dominant
+- 4–5 Pale gold (#F0D080) dots: subtler, creating depth
+- 2–3 Warm amber (#E8820C) dots: warmest, accent points
+Each dot clearly shows the micro fox face at macro scale: two pointed ear-tip protrusions
+(1.5mm each, separately visible), two dot eyes and tiny triangular nose at dot center.
+One 9mm "leader dot" with star-shaped eyes (★) visible — this larger dot is the
+focal anchor of the composition.
+
+TEXTURE EMPHASIS: Raking side-light reveals hot foil gold surface on each dot — upper
+60% of each dot has brilliant foil shimmer, lower 40% shows matte digital print gold.
+This gradient within each dot is visible at macro scale: each tiny fox is itself a
+composition of two surfaces. The charmeuse satin between dots shows liquid silk quality
+— deep black-navy in shadow, bright white specular in highlights — making the dots
+appear to float on a liquid dark surface.
+
+MICRO DETAIL: One cold foil "·30·" border element visible at frame edge, demonstrating
+the different metallic quality of cold foil vs hot foil dots.
+
+REFERENCE SCALE: Millimeter ruler at edge showing 6mm dot actual size and ear-tip
+dimensions. MOOD: Luxury constellation textile documentation — like a satellite view
+of a galaxy captured on silk. Celebrates the dual-read: constellation at distance,
+50 fox faces at macro.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Fabric):**
+```
+plain polka dots without fox features, no ear tips visible, flat dots, no foil
+shimmer, dull surface, cold blue tones, flat lighting, harsh shadows, human hands,
+wrinkled fabric, stains, synthetic material, watermark, text overlay, uniform
+identical dots (no variation in gold tone), no satin sheen, no constellation depth
+```
+
+---
+
+### Prompt 5 — Fox Dot & Border Close-up (Micro Craftsmanship Detail)
+
+```
+Product photography: extreme close-up macro detail shot, approximately 6x6cm visible
+frame — tighter than other designs because the detail here is at 6mm scale.
+Studio lighting with raking directional side-light at 30 degrees and subtle back-light
+to reveal hot foil texture and micro-embroidery ear-tip dimension.
+
+MICRO DETAIL (Primary Focus): A cluster of 3 fox dots in close-up, showing the full
+craft complexity:
+
+DOT 1 (Center): 9mm "leader dot" with star eyes (★‿★). Clearly visible:
+  - Hot foil gold surface: upper 60% with brilliant stamped metallic texture
+  - Digital print gold base: lower 40% with slightly warmer matte tone
+  - Two ear-tips: 2mm micro metallic thread embroidery, each ear-tip has subtle
+    3D dimension — raised above the foil dot surface, creating tiny shadows
+  - Star-shaped eye marks: two ★ shapes, each approximately 1.5mm, in navy ink
+    on gold foil surface — navy on gold creates clear contrast
+  - Tiny triangular nose: 0.8mm, navy on gold, center-bottom of face
+
+DOT 2 (Upper-left): 6mm standard dot with wink expression (^‿-).
+  - Same foil/print structure but smaller scale
+  - One eye open (crescent arc), one eye closed (short line) — visible at macro
+  - Ear-tips proportionally smaller, equally visible and precise
+
+DOT 3 (Lower-right): 6mm standard dot, happy expression (^‿^).
+  - Both eyes as crescent arcs
+  - Shows the five-expression range within the same physical structure
+
+SECONDARY DETAIL: Cold foil "·30·" border pattern partially visible at frame edge —
+demonstrating the contrast between hot foil (dots, warm shimmer) and cold foil (border,
+cooler mirror finish). Navy charmeuse silk background showing satin weave grain between
+dots.
+
+TEXTURE & LIGHT: Raking 30-degree side-light optimized to show ear-tip micro-embroidery
+dimension — the finest craft element in the entire series. The 2mm embroidered ear-tips
+cast shadows 3× their own height under raking light, making them dramatically visible.
+Back-light creates rim glow around foil dot edges.
+
+REFERENCE SCALE: Millimeter grid overlay or ruler at edge. MOOD: Micro-manufacturing
+luxury documentation — like Apple product engineering detail photography or Patek Philippe
+movement macro. Celebrates the proposition: 200 hand-embroidered ear-tip points across
+50 fox dots, because excellence is in every detail.
+--ar 1:1 --v 6 --style raw --q 2
+```
+
+**Negative Prompt (Micro Detail):**
+```
+blurry fox faces, no ear-tips visible, flat dots (no 3D), identical expressions across
+dots, dull foil, no texture difference between hot/cold foil, flat lighting, harsh
+lighting, no shadow from ear-tips, pixelated photography, watermark, text overlay,
+overexposed, cold blue tones, no satin sheen between dots, cheap print quality
+```
+
+---
+
 *Design V2-10 · FPT Telecom 30 Years · Top 50 Honor Sash · Version 2 · 2027*
 
 ---
