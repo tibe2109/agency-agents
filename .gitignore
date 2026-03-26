@@ -76,3 +76,11 @@ integrations/windsurf/.windsurfrules
 integrations/openclaw/*
 integrations/qwen/agents/
 !integrations/openclaw/README.md
+projects/gemini-generator/gemini_profile_data/Default/Cache/Cache_Data/data_3
+/projects/gemini-generator/gemini_profile_data/Default/Cache/Cache_Data
+/projects/gemini-generator/gemini_profile_data/Default/Code Cache
+/projects/fb-engagement-tool/fb_profile_data/Default/Code Cache
+/projects/fb-engagement-tool/fb_profile_data/Default
+/projects/gemini-generator/gemini_profile_data
+/projects/fb-engagement-tool/fb_profile_data
+/projects/fb-engagement-tool

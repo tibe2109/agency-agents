@@ -1,13 +1,28 @@
 {
-  "schedule": "0 10 * * *", 
-  "comments": [
-    {
-      "postUrl": "https://www.facebook.com/groups/PhongTraoFTEL.FIL/posts/4037456749731748/",
-      "images": [
-        "mockup_cao_vang_bay_len_1.jpg",
-        "mockup_cao_vang_bay_len_2.jpg"
-      ],
-      "text": "Tuyệt phẩm Khăn lụa Cáo Vàng Bay Lên kỷ niệm 30 năm FPT Telecom! Thiết kế này mang trọn tinh thần Khí Phách Tiên Phong. Bạn nghĩ sao về mẫu này? 🦊✨ #FPTTelecom30 #KhíPháchTiênPhong"
+  "poster": {
+    "enabled": true,
+    "schedule": "0 9,14,19 * * *",
+    "design_dir": "./designs",
+    "image_dir": "./images",
+    "group_url": "https://www.facebook.com/groups/PhongTraoFTEL.FIL/",
+    "template": "Bài dự thi sáng tạo khăn vinh danh TOP50 FTEL\nAccount: AnhTH45@fpt.com\nĐơn vị: ISC\n\n{{concept}}\n\nTag tên bạn bè có trong group: @Huỳnh Quốc Việt, @Chung Hoàng Liêm, @Nguyễn Tấn Vũ, @Trương Ngọc Thạch, @Phát Ngô, @Nguyễn Hải Sơn\n#KhanTOP50"
+  },
+  "comment": {
+    "enabled": true,
+    "schedule": "0 10 * * *",
+    "config": {
+      "post_url": "https://www.facebook.com/groups/PhongTraoFTEL.FIL/posts/4037456749731748/",
+      "scenario_id": "5958cc1c-6372-4710-b26c-7a96b944c4a8"
     }
-  ]
+  },
+  "dm": {
+    "enabled": false,
+    "schedule": "0 9 * * *",
+    "config": {
+      "post_url": "https://www.facebook.com/groups/PhongTraoFTEL.FIL/posts/4037456749731748/",
+      "group_url": "https://facebook.com",
+      "message_template": "Hi",
+      "max_members": 10
+    }
+  }
 }

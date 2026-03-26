@@ -1,0 +1,12 @@
+{
+  "name": "gemini-generator",
+  "version": "1.0.0",
+  "description": "Automated image generation using Google Gemini",
+  "main": "src/generator.js",
+  "scripts": {
+    "start": "node src/generator_demo.js"
+  },
+  "dependencies": {
+    "playwright": "^1.58.2"
+  }
+}
