@@ -7,6 +7,8 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "setup-session": "node src/playwright/session.js",
+    "setup-gemini": "node src/playwright/gemini-session.js",
+    "gemini-image": "node src/playwright/gemini-image.js",
     "scheduler": "node src/scheduler.js",
     "post-designs": "node src/poster_job.js",
     "all": "concurrently \"npm start\" \"npm run scheduler\""

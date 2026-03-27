@@ -1,5 +1,28 @@
 {
   "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:blog.laozhang.ai)",
+      "WebFetch(domain:www.segmind.com)",
+      "WebFetch(domain:intuitionlabs.ai)",
+      "WebFetch(domain:replicate.com)",
+      "Bash(node -e \"const path = require\\(''path''\\); const dir = path.join\\(__dirname, ''../../../../projects/fpt-telecom-sash/designs/individual''\\); console.log\\(''Resolved path:'', dir\\); console.log\\(''Exists:'', require\\(''fs''\\).existsSync\\(dir\\)\\);\")",
+      "Bash(node -e \":*)",
+      "Bash(ls -lh \"d:/Solution/agency-agents/projects/fb-engagement-tool/src/playwright/gemini-\"*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)",
+      "Bash(taskkill /F /IM chrome.exe)",
+      "Bash(\"C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe\" --version)",
+      "Bash(wmic datafile:*)",
+      "Bash(powershell -NoProfile -Command \"[System.Diagnostics.FileVersionInfo]::GetVersionInfo\\(''C:\\\\Program Files\\\\Google\\\\Chrome\\\\Application\\\\chrome.exe''\\).FileVersion\")",
+      "Bash(pkill -f chrome)",
+      "Bash(powershell -Command \"Get-Process chrome -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2\")",
+      "Bash(powershell -Command \"Get-Process chrome -ErrorAction SilentlyContinue | Stop-Process -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 3; Write-Host ''Chrome closed''\")",
+      "Bash(/d/Solution/agency-agents/projects/fpt-telecom-sash/designs/v4/FILES_INVENTORY.txt:*)",
+      "Read(//d/Solution/agency-agents/**)",
+      "Bash(ls *.md *.txt)"
+    ],
     "additionalDirectories": [
       "d:\\Solution\\agency-agents\\.claude"
     ]
