@@ -1,10 +1,32 @@
 # Interactive Chrome Launcher for Gemini Generator
 $ErrorActionPreference = "Continue"
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$repoRoot = Resolve-Path (Join-Path $scriptDir "..\..")
 
 Write-Host "[WELCOME] INTERACTIVE MODE" -ForegroundColor Cyan
-Write-Host "CRITICAL REQUIREMENT: To allow the script to type for you, Chrome MUST be restarted in debug mode." -ForegroundColor Yellow
-Write-Host "This means ALL existing Chrome windows must be CLOSED FIRST." -ForegroundColor Yellow
+Write-Host "This script opens Chrome in debug mode, waits for your login, then runs batch generation." -ForegroundColor Yellow
 Write-Host ""
+
+# Select profile folder so different Gemini accounts can be reused.
+$defaultProfileName = "gemini_profile_data"
+$existingProfiles = Get-ChildItem -Path $scriptDir -Directory -ErrorAction SilentlyContinue |
+    Where-Object { $_.Name -like "gemini_profile_data*" } |
+    Select-Object -ExpandProperty Name
+
+if ($existingProfiles) {
+    Write-Host "Existing profiles:" -ForegroundColor Cyan
+    $existingProfiles | ForEach-Object { Write-Host " - $_" }
+    Write-Host ""
+}
+
+$profileInput = Read-Host "Profile name to use (Enter for '$defaultProfileName')"
+if ([string]::IsNullOrWhiteSpace($profileInput)) {
+    $profileInput = $defaultProfileName
+}
+$env:GEMINI_PROFILE_NAME = $profileInput
+Write-Host "[PROFILE] Using: $profileInput" -ForegroundColor Cyan
+Write-Host ""
+
 $response = Read-Host "Do you want me to force close Chrome for you? (REQUIRED for automation) (Y/N)"
 
 if ($response -eq 'Y' -or $response -eq 'y') {
@@ -28,22 +50,15 @@ if ($response -eq 'Y' -or $response -eq 'y') {
 }
 
 # 2. Launch Chrome with Debugging Port
-$userDataDir = "$env:LOCALAPPDATA\Google\Chrome\User Data"
+$userDataDir = Join-Path $scriptDir $profileInput
 $chromePath = "C:\Program Files\Google\Chrome\Application\chrome.exe"
 if (-not (Test-Path $chromePath)) {
     $chromePath = "${env:ProgramFiles(x86)}\Google\Chrome\Application\chrome.exe"
 }
 
 Write-Host "[LAUNCH] Launching Chrome..." -ForegroundColor Cyan
-# Using Start-Process to detach
-$processArgs = @(
-    "--remote-debugging-port=9222",
-    "--user-data-dir=`"$userDataDir`"",
-    "--no-first-run",
-    "--no-default-browser-check",
-    "--restore-last-session",
-    "https://gemini.google.com/app"
-)
+New-Item -ItemType Directory -Force -Path $userDataDir | Out-Null
+$processArgs = "--remote-debugging-port=9222 --user-data-dir=`"$userDataDir`" --no-first-run --no-default-browser-check --restore-last-session https://gemini.google.com/app"
 Write-Host "DEBUG: Launching with args: $processArgs" -ForegroundColor Gray
 Start-Process -FilePath $chromePath -ArgumentList $processArgs
 Start-Sleep -Seconds 3
@@ -51,10 +66,17 @@ Start-Sleep -Seconds 3
 # Wait for port to open
 Write-Host "[CHECK] Verifying debugging port 9222..."
 $portOpen = $false
-# Check both localhost and 127.0.0.1
-if ((Test-NetConnection -ComputerName localhost -Port 9222 -WarningAction SilentlyContinue).TcpTestSucceeded -or
-    (Test-NetConnection -ComputerName 127.0.0.1 -Port 9222 -WarningAction SilentlyContinue).TcpTestSucceeded) {
-    $portOpen = $true
+# Check CDP endpoint instead of Test-NetConnection to avoid verbose terminal noise.
+for ($i = 1; $i -le 12; $i++) {
+    try {
+        $resp = Invoke-RestMethod -Uri "http://127.0.0.1:9222/json/version" -TimeoutSec 2
+        if ($resp.webSocketDebuggerUrl) {
+            $portOpen = $true
+            break
+        }
+    } catch {
+        Start-Sleep -Seconds 1
+    }
 }
 
 if ($portOpen) {
@@ -81,7 +103,7 @@ if ($portOpen) {
 Write-Host ""
 Write-Host "[ACTION REQUIRED]:" -ForegroundColor Green
 Write-Host "1. Chrome should have opened."
-Write-Host "   (If not, please check if you see a 'Chrome is being controlled' banner at the top of the browser)"
+Write-Host "   (Look for 'Chrome is being controlled by automated test software' banner)"
 Write-Host "2. Please LOGIN to your Google account or ensure you are logged in."
 Write-Host "3. Ensure you are on the Gemini chat screen."
 Write-Host "4. Come back here and press ENTER to start the automation."
@@ -89,10 +111,11 @@ Write-Host ""
 Pause
 
 # 3. Start the Generator
-Write-Host "[START] Starting TEST MODE (Checking input typing)..." -ForegroundColor Cyan
-Write-Host "Please ensure you have clicked inside the Gemini input box at least once to ensure focus." -ForegroundColor Cyan
-# node projects/gemini-generator/src/batch_generate.js
-node projects/gemini-generator/src/test_typing.js
+Write-Host "[START] Starting batch generation..." -ForegroundColor Cyan
+Push-Location $repoRoot
+$env:GEMINI_FORCE_CDP = "1"
+node projects/gemini-generator/src/batch_generate.js
+Pop-Location
 
-Write-Host "[DONE] Test finished! Check if you see typing in the browser." -ForegroundColor Green
+Write-Host "[DONE] Batch finished." -ForegroundColor Green
 Pause

@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_14"
-name_vi: "Tưởng Nóc Vương Lộn"
+name_vi: "TÆ°á»Ÿng NÃ³c VÆ°Æ¡ng Lá»™n"
 name_en: "Building the Future - Architecture"
 category: "FPT HERITAGE & TECH FUSION (B4)"
-palette_primary: "#2c3e50 → #3498db → #e74c3c"
+palette_primary: "#2c3e50 â†’ #3498db â†’ #e74c3c"
 technique: "Architectural Embroidery + Elevation Drawing"
 material: "Jacquard Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­"
+heritage_score: "â­â­â­â­"
 ---
 
-# DESIGN V4_14 — "TƯỞNG NÓC VƯƠNG LộN"
+# DESIGN V4_14 â€” "TÆ¯á»žNG NÃ“C VÆ¯Æ NG Lá»™N"
 ## Building the Future - Architectural Vision
 
 Stylized building silhouettes rising from bottom to top panel, representing FPT's infrastructure growth. Starting with simple building (1997) and evolving to complex skyscraper with digital connectivity indicators (2027). Colors shift from grey (past) through blue (present) to red (energy/future).
@@ -26,14 +26,14 @@ Stylized building silhouettes rising from bottom to top panel, representing FPT'
 | Attribute | Value |
 |---|---|
 | **Visual Style** | Architectural elevation drawing |
-| **Color Gradient** | Grey → Blue → Red |
+| **Color Gradient** | Grey â†’ Blue â†’ Red |
 | **Density** | HIGH (50% coverage) |
 | **Sophistication** | Engineering + Art |
 | **Target Audience** | Infrastructure leaders, builders |
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Architectural luxury commemorative silk sash celebrating FPT Telecom's role in
@@ -65,6 +65,12 @@ beneath the buildings.
 Studio setup: Directional lighting from left creating architectural shadow, 120cm
 octabox at 45 degrees. Cool backdrop. Photography: 90mm macro at f/8, frontal
 perspective emphasizing the elevation view. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -75,4 +81,5 @@ hands, mannequin, watermark, crude drawing, loose threads
 
 ---
 
-*V4_14 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_14 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

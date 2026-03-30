@@ -2,6 +2,29 @@ const { getContext, humanDelay, closeBrowser } = require('./browser');
 const fs = require('fs');
 const path = require('path');
 
+async function findFirstVisible(page, selectors, timeoutMs = 8000) {
+    for (const sel of selectors) {
+        try {
+            const loc = page.locator(sel).first();
+            await loc.waitFor({ state: 'visible', timeout: timeoutMs });
+            return { selector: sel, locator: loc };
+        } catch (e) {
+            // Try next selector.
+        }
+    }
+    return null;
+}
+
+function hasCanceledSigninMessage(text) {
+    const t = (text || '').toLowerCase();
+    return (
+        t.includes('request canceled') ||
+        t.includes("can't sign in") ||
+        t.includes('ban da bi dang xuat') ||
+        t.includes('vui long dang nhap')
+    );
+}
+
 /**
  * Generate image using Gemini
  * @param {string} prompt - The prompt to generate
@@ -9,166 +32,105 @@ const path = require('path');
  */
 async function generateImage(prompt, outputDir) {
   const context = await getContext();
-  let page;
-  
-  if (context.pages().length > 0) {
-      page = context.pages()[0];
-  } else {
-      page = await context.newPage();
-  }
+    const page = await context.newPage();
 
   try {
-      console.log('🔗 Navigating to Gemini...');
-      await page.goto('https://gemini.google.com/app', { waitUntil: 'domcontentloaded' });
-      await page.waitForTimeout(3000);
+            console.log('🔗 Opening Gemini in a new tab...');
+            await page.goto('https://gemini.google.com/app', { waitUntil: 'domcontentloaded' });
+            await page.waitForTimeout(2500);
+
+            const pageText = (await page.textContent('body')) || '';
+            if (hasCanceledSigninMessage(pageText)) {
+                throw new Error('Google session canceled/sign-out detected on Gemini page. Re-login with setup_login_profile.ps1 and reuse the same open Chrome session.');
+            }
 
       // Check if login is needed
       if (page.url().includes('accounts.google.com')) {
-          console.log('⚠️ Please login to Google account in the browser window!');
+                    console.log('⚠️ Login required. Please login once in this browser profile, then return to terminal.');
           // Wait indefinitely for user to login and redirect back
           await page.waitForURL('https://gemini.google.com/app', { timeout: 0 });
           console.log('✅ Login detected!');
           await page.waitForTimeout(3000);
       }
 
-      // 1. Click "Tạo hình ảnh" button if visible (Start new chat or functionality)
-      // User provided: <button aria-label="🖼️ Tạo hình ảnh, nút, nhấn để dùng công cụ">
-      const createImgBtnSelector = 'button[aria-label*="Tạo hình ảnh"], button .card-label:has-text("Tạo hình ảnh")';
-      try {
-          const createBtn = page.locator(createImgBtnSelector).first();
-          if (await createBtn.isVisible({ timeout: 5000 })) {
-             console.log('🖱️ Clicking "Create Image" button...');
-             await createBtn.click();
-             await page.waitForTimeout(2000);
-          }
-      } catch(e) {
-          console.log('ℹ️ "Create Image" button not found or not needed.');
-      }
+            // 1) Click create image mode/tool if available.
+            const createImageMatch = await findFirstVisible(page, [
+                'button[aria-label*="Tạo hình ảnh"]',
+                'button:has-text("Tạo hình ảnh")',
+                'button[aria-label*="Create image"]',
+                'button:has-text("Create image")'
+            ], 5000);
+            if (createImageMatch) {
+                console.log(`🖼️ Clicking create-image button via: ${createImageMatch.selector}`);
+                await createImageMatch.locator.click({ force: true });
+                await page.waitForTimeout(1200);
+            } else {
+                console.log('ℹ️ Create-image button not found. Continuing with current input mode.');
+            }
 
-      // 2. Enter Prompt
-      console.log('✍️ Entering prompt...');
-      
-      // Update selectors based on user HTML
-      // The aria-label is on the <rich-textarea>, the contenteditable is the child <div>
-      const inputSelectors = [
-          'rich-textarea[aria-label="Nhập câu lệnh cho Gemini"] > div.ql-editor', // Precise parent-child
-          'rich-textarea > div.ql-editor', // Less specific parent
-          'div.ql-editor[contenteditable="true"]', // Class based
-          'div[role="textbox"]', // Generic
-          'div.ql-editor > p' // Deepest element inside editor
-      ];
-      
-      let inputFound = false;
-      let inputLocator = null;
-      
-      for (const sel of inputSelectors) {
-          try {
-              inputLocator = page.locator(sel).first();
-              // Wait a tiny bit to be sure
-              if (await inputLocator.count() > 0 && await inputLocator.isVisible()) {
-                  console.log(`🖱️ Found input using: ${sel}`);
-                  // Click to focus
-                  await inputLocator.click({ force: true });
-                  await page.waitForTimeout(500); // Wait for focus to settle
-                  
-                  // Clear existing content safely
-                  try {
-                      await inputLocator.focus();
-                      await page.keyboard.press('Control+A');
-                      await page.keyboard.press('Backspace');
-                  } catch (e) {
-                       console.log('⚠️ Failed to clear input, proceeding anyway...');
-                  }
-                  
-                  await page.waitForTimeout(200);
+            // 2) Focus input and paste/enter prompt.
+            console.log('✍️ Filling prompt...');
+            const inputMatch = await findFirstVisible(page, [
+                'div.ql-editor.textarea[contenteditable="true"]',
+                'rich-textarea[aria-label="Nhập câu lệnh cho Gemini"] div.ql-editor[contenteditable="true"]',
+                'rich-textarea div.ql-editor[contenteditable="true"]',
+                'div[role="textbox"][contenteditable="true"]'
+            ], 12000);
 
-                  // Type prompt character by character to trigger events
-                  console.log(`Typing prompt (${prompt.length} chars)...`);
-                  await page.keyboard.type(prompt, { delay: 5 }); 
-                  
-                  // Verification: Check if text is entered
-                  // Wait a moment for UI update
-                  await page.waitForTimeout(500);
-                  
-                  // Check the text content of the editor div
-                  // Note: content might be in <p> tags inside editor
-                  const editorElement = page.locator('div.ql-editor').first();
-                  const editorContent = await editorElement.textContent();
-                  
-                  if (editorContent && editorContent.trim().length > 0) {
-                      inputFound = true;
-                      console.log('✅ Text entered successfully.');
-                      break;
-                  } else {
-                      console.log('⚠️ Text entry verification failed (empty content). Retrying...');
-                  }
-              }
-          } catch(e) {
-              // Ignore specific selector error and try next
-              // console.log(`Selector ${sel} failed: ${e.message}`);
-          }
-      }
-      
-      if (!inputFound) {
-          console.error("❌ Could not find or type into input box.");
-          // Debug: print available input-like elements
-          const inputs = await page.locator('div[contenteditable="true"]').count();
-          console.log(`Found ${inputs} contenteditable divs on page.`);
-          throw new Error("Input box not found");
-      }
+            if (!inputMatch) {
+                const count = await page.locator('div[contenteditable="true"]').count();
+                throw new Error(`Input box not found. contenteditable count=${count}`);
+            }
+
+            const inputLocator = inputMatch.locator;
+            console.log(`⌨️ Using input selector: ${inputMatch.selector}`);
+            await inputLocator.click({ force: true });
+            await page.waitForTimeout(250);
+            await page.keyboard.press('Control+A');
+            await page.keyboard.press('Backspace');
+
+            let pasted = false;
+            try {
+                await page.evaluate(async (text) => {
+                    await navigator.clipboard.writeText(text);
+                }, prompt);
+                await page.keyboard.press('Control+V');
+                pasted = true;
+            } catch (e) {
+                // Clipboard can fail due to browser permissions; fallback to typing.
+            }
+
+            if (!pasted) {
+                await page.keyboard.type(prompt, { delay: 2 });
+            }
+
+            await page.waitForTimeout(400);
+            const editorText = ((await inputLocator.textContent()) || '').trim();
+            if (!editorText) {
+                throw new Error('Prompt input appears empty after paste/type');
+            }
+            console.log('✅ Prompt entered.');
 
       // 3. Click Send
       console.log('🚀 Sending prompt...');
-      // User HTML: button with aria-label="Gửi tin nhắn" and mat-icon send
-      const sendBtnSelector = 'button[aria-label="Gửi tin nhắn"]';
-      const sendBtn = page.locator(sendBtnSelector).first();
-      
-      // Wait for button to be enabled (aria-disabled="false")
-      try {
-          await sendBtn.waitFor({ state: 'visible', timeout: 5000 });
-          // Check if disabled
-          const isDisabled = await sendBtn.getAttribute('aria-disabled') === 'true';
-          if (isDisabled) {
-              console.log('⚠️ Send button is disabled. Prompt might be empty?');
-              // Try typing a space to trigger
-              await inputLocator.type(' ');
-              await page.waitForTimeout(500);
-          }
-          await sendBtn.click();
-      } catch (e) {
-          console.log('⚠️ Could not click send button directly. Trying icon selector...');
-          await page.locator('mat-icon[data-mat-icon-name="send"]').click();
-      }
-      
-      // 4. Wait for generation
-      console.log('⏳ Waiting for generation (this may take 10-20s)...');
-      
-      // We wait for the "Download" button to appear.
-      // User provided: button[data-test-id="download-generated-image-button"]
-      // or button[aria-label="Tải hình ảnh có kích thước đầy đủ xuống"]
-      const downloadSelector = 'button[data-test-id="download-generated-image-button"], button[aria-label="Tải hình ảnh có kích thước đầy đủ xuống"]';
-      
-      // Wait up to 60s for the button
-      const downloadBtn = page.locator(downloadSelector).first();
-      await downloadBtn.waitFor({ state: 'visible', timeout: 60000 });
-      console.log('✅ Image generated! Finding download button...');
+            const sendMatch = await findFirstVisible(page, [
+                'button[aria-label="Gửi tin nhắn"][aria-disabled="false"]',
+                'button[aria-label="Send message"][aria-disabled="false"]',
+                'button.send-button.submit[aria-disabled="false"]',
+                'button:has(mat-icon[fonticon="send"])[aria-disabled="false"]'
+            ], 8000);
 
-      // 5. Download
-      console.log('⬇️ Downloading image...');
-      
-      // Start waiting for download before clicking. 
-      // Note: If clicking opens a new tab or triggers download, this Promise will resolve.
-      const downloadPromise = page.waitForEvent('download', { timeout: 15000 });
-      
-      await downloadBtn.click();
-      
-      const download = await downloadPromise;
-      const suggestedName = download.suggestedFilename();
-      const savePath = path.join(outputDir, suggestedName);
-      
-      await download.saveAs(savePath);
-      console.log(`✅ Image saved to: ${savePath}`);
-      return savePath;
+            if (!sendMatch) {
+                throw new Error('Send button not found or still disabled');
+            }
+            await sendMatch.locator.click({ force: true });
+
+            // 4) Wait fixed 10 seconds, then continue with next prompt.
+            console.log('⏳ Sent. Waiting 10 seconds before next tab...');
+            await page.waitForTimeout(10000);
+
+            // Return null because this mode is submit-only (no download step).
+            return null;
 
   } catch (err) {
       console.error('❌ Error generating image:', err);
@@ -177,6 +139,11 @@ async function generateImage(prompt, outputDir) {
       await page.screenshot({ path: errorShot });
       console.log(`📸 Saved error screenshot to: ${errorShot}`);
       throw err;
+    } finally {
+            // Keep only one working tab at a time as requested.
+            if (!page.isClosed()) {
+                    await page.close();
+            }
   }
 }
 

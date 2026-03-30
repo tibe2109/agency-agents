@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_16"
-name_vi: "Sóng Truyền Miền"
+name_vi: "SÃ³ng Truyá»n Miá»n"
 name_en: "Waves of Innovation - Signal Propagation"
 category: "FPT HERITAGE & TECH FUSION (B6)"
-palette_primary: "#003d82 → #00bfff → #ffffff"
+palette_primary: "#003d82 â†’ #00bfff â†’ #ffffff"
 technique: "Concentric Wave Embroidery + Metallic Thread"
 material: "Jacquard Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­â­"
+heritage_score: "â­â­â­â­"
 ---
 
-# DESIGN V4_16 — "SÓNG TRUYỀN MIỀN"
+# DESIGN V4_16 â€” "SÃ“NG TRUYá»€N MIá»€N"
 ## Waves of Innovation - Signal Propagation
 
 ---
@@ -20,7 +20,7 @@ heritage_score: "⭐⭐⭐⭐"
 | Attribute | Value |
 |---|---|
 | **Core Metaphor** | Expanding ripples/waves from center point |
-| **Color** | Navy → Bright cyan → White |
+| **Color** | Navy â†’ Bright cyan â†’ White |
 | **Technique** | Concentric circles + metallic couching |
 | **Meaning** | FPT's impact spreads across Vietnam and beyond |
 
@@ -32,7 +32,7 @@ Concentric wave patterns emanating from a central point, like ripples in water w
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Expansive luxury commemorative silk sash celebrating FPT's radiating impact
@@ -59,6 +59,12 @@ directly overhead position. Subtle fill card from camera right. Cool grey-blue
 backdrop (#4a7f9f). Photography: 90mm macro at f/8, perfectly frontal/straight-on
 perspective (dead center of frame) to emphasize the radial wave pattern. --ar 2:3
 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -70,4 +76,5 @@ threads, crude stitching
 
 ---
 
-*V4_16 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_16 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

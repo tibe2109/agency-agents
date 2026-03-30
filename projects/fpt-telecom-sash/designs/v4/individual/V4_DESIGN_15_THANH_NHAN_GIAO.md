@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_15"
-name_vi: "Thành Nhân Giao"
+name_vi: "ThÃ nh NhÃ¢n Giao"
 name_en: "Connected Hearts - Community"
 category: "FPT HERITAGE & TECH FUSION (B5)"
-palette_primary: "#e74c3c → #c0392b → #ecf0f1"
+palette_primary: "#e74c3c â†’ #c0392b â†’ #ecf0f1"
 technique: "Interlocking Shapes + Metallic Thread"
 material: "Habotai Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­"
+heritage_score: "â­â­â­â­â­"
 ---
 
-# DESIGN V4_15 — "THÀNH NHÂN GIAO"
+# DESIGN V4_15 â€” "THÃ€NH NHÃ‚N GIAO"
 ## Connected Hearts - Community & Human Connection
 
 ---
@@ -32,7 +32,7 @@ Five interlocking shapes (hearts or circular forms) representing different FPT c
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Community-focused luxury commemorative silk sash celebrating FPT Telecom's
@@ -61,6 +61,12 @@ human connection feel. 120cm octabox key light at 45 degrees. Single fill card
 from right at 2:1 ratio. Warm neutral backdrop (#D4A574). Photography: 90mm macro
 at f/8, 3/4 angle showing interconnected arrangement. Lighting emphasizes metallic
 gold connecting lines. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -71,4 +77,5 @@ mannequin, watermark, crude stitching, loose threads, flat appearance
 
 ---
 
-*V4_15 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_15 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

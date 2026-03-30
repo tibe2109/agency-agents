@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_23"
-name_vi: "Đại Trương Thiên"
+name_vi: "Äáº¡i TrÆ°Æ¡ng ThiÃªn"
 name_en: "Mekong River Landscape"
 category: "VIETNAMESE CULTURAL ELEMENTS (C3)"
-palette_primary: "#1a3a1a → #2d5a2d → #d4af37"
+palette_primary: "#1a3a1a â†’ #2d5a2d â†’ #d4af37"
 technique: "Landscape Embroidery + Layered Perspective"
 material: "Habotai Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­"
+heritage_score: "â­â­â­â­â­"
 ---
 
-# DESIGN V4_23 — "ĐẠI TRƯƠNG THIÊN"
+# DESIGN V4_23 â€” "Äáº I TRÆ¯Æ NG THIÃŠN"
 ## Mekong River Landscape - Vietnam's Heart
 
 A stylized landscape representing Vietnam's natural heritage: mountains/hills in the distance (rendered in pale greens and blues), flowing river in the middle, and rice paddies in the foreground. The Mekong River and agricultural landscape represent Vietnam's soul and foundation.
@@ -28,7 +28,7 @@ A stylized landscape representing Vietnam's natural heritage: mountains/hills in
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Landscape-inspired luxury commemorative silk sash celebrating Vietnam's natural
@@ -70,6 +70,12 @@ from camera right at 2:1 ratio. Neutral green-blue backdrop. Photography: 90mm
 macro at f/8, frontal 3/4 perspective showing the complete landscape vista from
 foreground through background. Lighting positioned to show depth through color
 and stitch detail without harsh shadows. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -81,4 +87,5 @@ model, hands, mannequin, watermark, crude stitching, loose threads, harsh shadow
 
 ---
 
-*V4_23 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_23 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

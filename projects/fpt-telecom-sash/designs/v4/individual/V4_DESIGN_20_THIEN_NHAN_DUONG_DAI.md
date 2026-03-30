@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_20"
-name_vi: "Thiên Nhân Đương Đại"
+name_vi: "ThiÃªn NhÃ¢n ÄÆ°Æ¡ng Äáº¡i"
 name_en: "Heaven-Human Bridge - Legacy Handoff"
 category: "FPT HERITAGE & TECH FUSION (B10)"
-palette_primary: "#4a5f8f → #daa520 → #f0e68c"
+palette_primary: "#4a5f8f â†’ #daa520 â†’ #f0e68c"
 technique: "Bridge Silhouette + Gradient Path Embroidery"
 material: "Jacquard Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­â­"
+heritage_score: "â­â­â­â­â­"
 ---
 
-# DESIGN V4_20 — "THIÊN NHÂN ĐƯƠNG ĐẠI"
+# DESIGN V4_20 â€” "THIÃŠN NHÃ‚N ÄÆ¯Æ NG Äáº I"
 ## Heaven-Human Bridge - Legacy Handoff to Future
 
 A stylized bridge spanning the entire panel, connecting past (dark blue left) to future (golden right). The bridge symbolizes FPT's role as a bridge connecting old Vietnam to new digital Vietnam, and connecting current generation to future generations. In Vietnamese philosophy, bridges represent connection and continuity.
@@ -22,13 +22,13 @@ A stylized bridge spanning the entire panel, connecting past (dark blue left) to
 | Attribute | Value |
 |---|---|
 | **Symbol** | Bridge = connection, continuity, legacy |
-| **Color** | Blue → Gold gradient |
+| **Color** | Blue â†’ Gold gradient |
 | **Density** | MEDIUM (38% coverage) |
 | **Final B-Category** | Completes heritage theme |
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Profound luxury commemorative silk sash celebrating legacy, continuity, and the
@@ -74,6 +74,12 @@ Neutral grey backdrop (#8B7D6B). Photography: 90mm macro at f/8, frontal
 perspective emphasizing the bridge's horizontal span. Lighting positioned to show
 the gradient color transition across the bridge and to create subtle shadow depth
 in the arch and deck detail. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -85,4 +91,5 @@ threads, flat appearance, unfinished detail, harsh shadows
 
 ---
 
-*V4_20 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_20 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

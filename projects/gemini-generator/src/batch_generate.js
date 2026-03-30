@@ -4,7 +4,7 @@ const { generateImage } = require('./generator');
 const { closeBrowser } = require('./browser');
 
 // Configuration
-const DESIGN_DIR = path.resolve(__dirname, '../../fpt-telecom-sash/designs/v3/individual');
+const DESIGN_DIR = path.resolve(__dirname, '../../fpt-telecom-sash/designs/v4/individual');
 const OUTPUT_DIR = path.resolve(__dirname, '../../fb-engagement-tool/images');
 
 // Ensure output directory exists
@@ -26,8 +26,9 @@ function getDesigns() {
         
         // Extract Visual Prompt
         // Logic: Find "## 🎨 Visual Prompt" and get the text inside code block
-        const promptMatch = content.match(/## 🎨 Visual Prompt[\s\S]*?```text([\s\S]*?)```/i);
-        
+        const promptMatch = content.match(
+            /##\s*(?:🎨\s*Visual Prompt|🖼️\s*IMAGE GENERATION PROMPT)[\s\S]*?```(?:text)?\s*([\s\S]*?)```/i
+        );
         if (promptMatch && promptMatch[1]) {
             let prompt = promptMatch[1].trim();
             // Remove [] brackets if needed or keep them as Gemini understands them well
@@ -42,41 +43,19 @@ function getDesigns() {
 }
 
 async function runBatch() {
-    console.log('🚀 Starting Batch Generation for V3 Designs...');
+    console.log('🚀 Starting Batch Generation for V4 Designs...');
     const designs = getDesigns();
     
     console.log(`📋 Found ${designs.length} designs to process.`);
 
     for (const design of designs) {
-        const outputFile = path.join(OUTPUT_DIR, `${design.id}.png`);
-        
-        // Skip if already exists
-        if (fs.existsSync(outputFile)) {
-            console.log(`⏩ Skipping ${design.id} (Image exists)`);
-            continue;
-        }
-
         console.log(`\n🎨 Generating for: ${design.id}`);
         console.log(`📝 Prompt length: ${design.prompt.length} chars`);
         
         try {
-            const finalPath = await generateImage(design.prompt, OUTPUT_DIR);
-            
-            // Rename the downloaded file to the design ID
-            // generateImage returns the path to the downloaded file (likely generic name)
-            // We need to rename it to design.id.png
-            
-            // Wait a bit for file handle release
-            await new Promise(r => setTimeout(r, 1000));
-            
-            if (finalPath !== outputFile) {
-                fs.renameSync(finalPath, outputFile);
-                console.log(`✅ Renamed to: ${outputFile}`);
-            }
-            
-            // Cool down
-            console.log('⏳ Cooling down 10s...');
-            await new Promise(r => setTimeout(r, 10000));
+            await generateImage(design.prompt, OUTPUT_DIR);
+            // generateImage now does: open tab -> click image mode -> paste prompt -> send -> wait 10s.
+            console.log('✅ Prompt submitted successfully.');
             
         } catch (error) {
             console.error(`❌ Failed to generate ${design.id}:`, error.message);

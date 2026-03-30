@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_18"
-name_vi: "Khoái Trăng Thông"
+name_vi: "KhoÃ¡i TrÄƒng ThÃ´ng"
 name_en: "Moonlight Knowledge - Digital Wisdom"
 category: "FPT HERITAGE & TECH FUSION (B8)"
-palette_primary: "#001a4d → #4a5f8f → #fffacd"
+palette_primary: "#001a4d â†’ #4a5f8f â†’ #fffacd"
 technique: "Moon & Stars Embroidery + Constellation Pattern"
 material: "Jacquard Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­"
+heritage_score: "â­â­â­â­"
 ---
 
-# DESIGN V4_18 — "KHOÁI TRĂNG THÔNG"
+# DESIGN V4_18 â€” "KHOÃI TRÄ‚NG THÃ”NG"
 ## Moonlight Knowledge - Digital Wisdom
 
 A large moon in the upper center with constellation patterns (tech-inspired constellations) around it, set against a night sky gradient. Represents how FPT's knowledge and guidance light the path forward. Moon symbolizes wisdom and constant guidance (unchanging across decades).
@@ -22,12 +22,12 @@ A large moon in the upper center with constellation patterns (tech-inspired cons
 | Attribute | Value |
 |---|---|
 | **Celestial Theme** | Moon + constellations |
-| **Color** | Navy → Slate → Pale Gold |
+| **Color** | Navy â†’ Slate â†’ Pale Gold |
 | **Meaning** | Eternal wisdom guiding the way |
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Serene and wise luxury commemorative silk sash celebrating knowledge, guidance,
@@ -70,6 +70,12 @@ warm fill card from camera left to prevent harshness. Cool dark grey-blue backdr
 constellation arrangement. Lighting positioned to create subtle glow around the
 moon from metallic stitching and to show constellation detail. --ar 2:3 --v 6
 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -81,4 +87,5 @@ crude stitching, loose threads, harsh shadows, cartoon style
 
 ---
 
-*V4_18 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_18 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

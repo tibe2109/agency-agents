@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_19"
-name_vi: "Cây Thành Công"
+name_vi: "CÃ¢y ThÃ nh CÃ´ng"
 name_en: "Tree of Success - Rooted Growth"
 category: "FPT HERITAGE & TECH FUSION (B9)"
-palette_primary: "#8B4513 → #228B22 → #FFD700"
+palette_primary: "#8B4513 â†’ #228B22 â†’ #FFD700"
 technique: "Tree Silhouette + Layered Branch Embroidery"
 material: "Habotai Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­"
+heritage_score: "â­â­â­â­â­"
 ---
 
-# DESIGN V4_19 — "CÂY THÀNH CÔNG"
+# DESIGN V4_19 â€” "CÃ‚Y THÃ€NH CÃ”NG"
 ## Tree of Success - Rooted Growth & Abundance
 
 A stylized tree growing from bottom to top: strong roots (brown/burgundy) transitioning to green trunk and branches, with golden foliage at the crown. Represents FPT's deep roots in Vietnam, healthy growth trajectory, and abundant future harvest.
@@ -22,13 +22,13 @@ A stylized tree growing from bottom to top: strong roots (brown/burgundy) transi
 | Attribute | Value |
 |---|---|
 | **Symbol** | Tree = growth, roots, harvest |
-| **Color** | Brown → Green → Gold |
+| **Color** | Brown â†’ Green â†’ Gold |
 | **Density** | MEDIUM-HIGH (45% coverage) |
 | **Success Metaphor** | Deep roots + reaching high = success |
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Life-affirming luxury commemorative silk sash celebrating sustainable growth,
@@ -74,6 +74,12 @@ ratio. Warm neutral backdrop (#C4A57B). Photography: 90mm macro at f/8, frontal
 3/4 perspective showing the complete tree from roots to crown. Lighting positioned
 to emphasize the vertical growth narrative and create subtle shadow texture in the
 branch work and foliage. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -85,4 +91,5 @@ stitching, loose threads, unnatural growth pattern, cartoon style
 
 ---
 
-*V4_19 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_19 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+

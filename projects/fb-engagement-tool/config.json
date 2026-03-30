@@ -2,10 +2,18 @@
   "poster": {
     "enabled": true,
     "schedule": "0 9,14,19 * * *",
-    "design_dir": "./designs",
-    "image_dir": "./images",
+    "design_dir": "../fpt-telecom-sash/designs/v4/individual",
+    "image_dir": "./images/v4",
+    "design_id_prefix": "V4_DESIGN_",
+    "min_design_index": 51,
+    "max_design_index": 100,
+    "run_all_on_now": true,
+    "keep_browser_open": true,
+    "inter_post_delay_seconds": 15,
+    "batch_size": 10,
+    "batch_pause_minutes": 10,
     "group_url": "https://www.facebook.com/groups/PhongTraoFTEL.FIL/",
-    "template": "Bài dự thi sáng tạo khăn vinh danh TOP50 FTEL\nAccount: AnhTH45@fpt.com\nĐơn vị: ISC\n\n{{concept}}\n\nTag tên bạn bè có trong group: @Huỳnh Quốc Việt, @Chung Hoàng Liêm, @Nguyễn Tấn Vũ, @Trương Ngọc Thạch, @Phát Ngô, @Nguyễn Hải Sơn\n#KhanTOP50"
+    "template": "Bài dự thi sáng tạo khăn vinh danh TOP50 FTEL\nAccount: AnhTH45@fpt.com\nĐơn vị: ISC\n{{concept}}\n---\n Tags:\n@Huỳnh Quốc Việt, @Chung Hoàng Liêm, @Nguyễn Tấn Vũ, @Trương Ngọc Thạch, @Phát Ngô, @Nguyễn Hải Sơn\n\n\n\n#KhanTOP50"
   },
   "comment": {
     "enabled": true,

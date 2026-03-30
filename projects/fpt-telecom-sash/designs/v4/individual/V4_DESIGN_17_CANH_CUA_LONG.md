@@ -1,16 +1,16 @@
----
+﻿---
 design_id: "V4_17"
-name_vi: "Cánh Của Lồng"
+name_vi: "CÃ¡nh Cá»§a Lá»“ng"
 name_en: "Phoenix Rising - Transformation"
 category: "FPT HERITAGE & TECH FUSION (B7)"
-palette_primary: "#8B0000 → #FFB81C → #FFFFFF"
+palette_primary: "#8B0000 â†’ #FFB81C â†’ #FFFFFF"
 technique: "Phoenix Silhouette + Gradient Ombre"
 material: "Habotai Silk 100% Mulberry, 22 Momme"
-stage_impact: "⭐⭐⭐⭐⭐"
-heritage_score: "⭐⭐⭐⭐⭐"
+stage_impact: "â­â­â­â­â­"
+heritage_score: "â­â­â­â­â­"
 ---
 
-# DESIGN V4_17 — "CÁNH CỬA LỒNG"
+# DESIGN V4_17 â€” "CÃNH Cá»¬A Lá»’NG"
 ## Phoenix Rising - Transformation & Renewal
 
 A phoenix bird rising vertically, wings spread wide, rendered in gradient from deep burgundy (ashes) through gold (flame) to white (transcendence). Represents FPT's ability to constantly transform and renew itself. In Vietnamese culture, the phoenix symbolizes imperial authority and resurrection.
@@ -22,13 +22,13 @@ A phoenix bird rising vertically, wings spread wide, rendered in gradient from d
 | Attribute | Value |
 |---|---|
 | **Symbol** | Phoenix - ultimate transformation |
-| **Color** | Burgundy → Gold → White |
+| **Color** | Burgundy â†’ Gold â†’ White |
 | **Density** | MEDIUM-HIGH (42% coverage) |
 | **Cultural Resonance** | Imperial strength, eternal renewal |
 
 ---
 
-## 🖼️ IMAGE GENERATION PROMPT
+## ðŸ–¼ï¸ IMAGE GENERATION PROMPT
 
 ```
 Majestic luxury commemorative silk sash celebrating FPT's transformative power
@@ -64,6 +64,12 @@ backdrop (#8B6F47). Photography: 90mm macro at f/8, frontal perspective
 emphasizing the phoenix's upward flight and wing spread. Lighting positioned to
 show gradient transition from burgundy through gold to white and to reveal feather
 detail in wings. --ar 2:3 --v 6 --style raw --q 2
+Brand insignia requirements (mandatory):
+- Integrate three premium marks with clear hierarchy: "FPT Telecom" wordmark, "TOP50" emblem, and "FTEL30" anniversary badge.
+- Render all three as couture-grade embroidery or jacquard marks (not sticker-like overlays).
+- Keep them fully legible, proportional, and aligned with the design's visual rhythm and palette.
+- Recommended placement: FPT Telecom near lower corner, TOP50 as a compact crest in a balanced secondary position, FTEL30 as the commemorative focal badge near the main motif flow.
+- Use metallic accents and refined edge finishing so the marks look integral to the textile craft.
 ```
 
 **Negative Prompt:**
@@ -75,4 +81,5 @@ threads, dull colors
 
 ---
 
-*V4_17 of 50 · FPT Telecom 30th Anniversary · "Khí Phách Tiên Phong 1997–2027"*
+*V4_17 of 50 Â· FPT Telecom 30th Anniversary Â· "KhÃ­ PhÃ¡ch TiÃªn Phong 1997â€“2027"*
+
